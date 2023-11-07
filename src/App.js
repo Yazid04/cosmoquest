@@ -1,8 +1,15 @@
-import './App.css';
+import React from "react";
+import "./App.css";
 
 function App() {
   return (
- <h2>Hello world!!!</h2>
+    <>
+      <div className="parent">
+        <div className="line"></div>
+      </div>
+      <div className=""></div>      
+      <h1 className="text-3xl font-bold">Hello world!</h1>
+    </>
   );
 }
 

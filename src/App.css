@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Playpen Sans
+Kaushan Script
+
+
+
+*/
+/* Reset styles for all elements, including pseudo-elements */
+*, #root, ::before, ::after {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+    .parent{
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+        background-color: #2F4F4F;
+        position: relative;
+    }
+
+    .parent .line{
+        position: absolute;
+        top: 10%;
+        left: 25%;
+        transform: translate(-35%, 15%);
+        width: 55rem;
+        height: 95rem;
+        background-color: #C0C0C0;
+        transform: rotate(80deg);
+        box-shadow: #00000059 0px 5px 15px;
+    }
