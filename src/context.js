@@ -1,14 +1,13 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext} from "react";
 
 const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
-  const [name, setName] = useState("Yazid, u r great!!!");
 
   return (
     <AppContext.Provider
       value={{
-        name,
+        
       }}
     >
       {children}
