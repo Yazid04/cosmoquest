@@ -11,3 +11,7 @@ function App() {
 }
 
 export default App;
+
+// apply sidebar - DONE
+// attach links and pages
+// hero content

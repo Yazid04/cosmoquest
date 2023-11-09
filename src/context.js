@@ -6,7 +6,8 @@ const AppProvider = ({ children }) => {
   const [showSubmenu, setShowSubmenu] = useState(false);
   const [title, setTitle] = useState("");
   const [location, setLocation] = useState({});
- 
+  const [isSideBarOpen, setIsSideBarOpen] = useState(false);
+  
   function closeSubmenu() {
     setShowSubmenu(false);
   }
@@ -17,8 +18,17 @@ const AppProvider = ({ children }) => {
     setShowSubmenu(true);
   }
 
+  function openSideBar(){
+    console.log("test")
+    setIsSideBarOpen(true)
+  }
+
+  function closeSideBar(){
+    setIsSideBarOpen(false);
+  }
+
   const handleMouseChange = (e)=>{
-    if(e.target.className.includes('closeSubMenu')){
+    if(window.innerWidth > 1024 && e.target.className.includes('closeSubMenu')){
        closeSubmenu();
     };
   }
@@ -33,6 +43,9 @@ const AppProvider = ({ children }) => {
         title,
         location,
         handleMouseChange,
+        openSideBar,
+        closeSideBar,
+        isSideBarOpen,
       }}
     >
       {children}
