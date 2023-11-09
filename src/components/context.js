@@ -19,7 +19,6 @@ const AppProvider = ({ children }) => {
   }
 
   function openSideBar(){
-    console.log("test")
     setIsSideBarOpen(true)
   }
 

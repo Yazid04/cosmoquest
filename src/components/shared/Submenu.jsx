@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { useGlobalContext } from "../context";
 import { data } from "../data";
+import { Link } from "react-router-dom";
 
 const Submenu = () => {
   const { location, title, showSubmenu } = useGlobalContext();
@@ -22,10 +23,10 @@ const Submenu = () => {
       }`}
     >
         <div className="w-full h-5 flex justify-center items-center relative"><div className="text-Silver absolute w-5 h-5 bg-Silver rotate-45 left-1/2 -top-1"></div></div>
-      <h2 className="px-3 py-3">{title}</h2>
+      <h2 className="px-3 py-3 text-xl">{title}</h2>
       <ul className="pb-6">
         {current?.subLinks?.map((item, i) => {
-          return <li className="list-disc ml-9 py-1" key={i}>{item}</li>;
+          return <li className="list-disc ml-9 py-1" key={i}><Link to={item.href}>{item.name}</Link></li>;
         })}
       </ul>
     </div>

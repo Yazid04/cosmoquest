@@ -3,6 +3,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
 import { useGlobalContext } from "../context";
 import { data } from "../data";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const { openSideBar, closeSideBar, isSideBarOpen } = useGlobalContext();
@@ -35,17 +36,18 @@ const Sidebar = () => {
                   <h1 className="text-2xl">{title}</h1>
                 </div>
                 <div>
-                  {subLinks.map((link, idx) => {
+                  {subLinks.map(link => {
+                    const {name, id, href} = link;
                     return (
-                      <div className="pl-5" key={idx}>
-                        <li>{link}</li>
+                      <div className="pl-5" key={id}>
+                      <Link to={href}><li>{name}</li></Link>
                       </div>
                     );
                   })}
                 </div>
               </div>
             );
-          })}
+        })}
         </section>
         </div>     
     </main>
