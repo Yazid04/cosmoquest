@@ -40,7 +40,7 @@ const Sidebar = () => {
                     const {name, id, href} = link;
                     return (
                       <div className="pl-5" key={id}>
-                      <Link to={href}><li>{name}</li></Link>
+                      <li><Link onClick={closeSideBar} to={href}>{name}</Link></li>
                       </div>
                     );
                   })}

@@ -2,7 +2,7 @@ import React from 'react'
 
 const SolarSystemExploration = () => {
   return (
-    <div>SolarSystemExploration</div>
+    <div>Cosmic Explorations / Solar System Exploration</div>
   )
 }
 

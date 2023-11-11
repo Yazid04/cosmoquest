@@ -2,7 +2,7 @@ import React from 'react'
 
 const Astronomy = () => {
   return (
-    <div>Astronomy</div>
+    <div>Cosmic Explorations / Astronomy</div>
   )
 }
 

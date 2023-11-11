@@ -2,7 +2,8 @@ import React from 'react'
 
 const AdvancementsInRocketry = () => {
   return (
-    <div>AdvancementsInRocketry</div>
+    <div>Space Heritage and Innovation
+/ Advancements In Rocketry</div>
   )
 }
 

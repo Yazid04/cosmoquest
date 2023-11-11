@@ -2,7 +2,7 @@ import React from 'react'
 
 const Galaxies = () => {
   return (
-    <div>Galaxies</div>
+    <div> Celestial WondersCelestial Wonders / Galaxies</div>
   )
 }
 

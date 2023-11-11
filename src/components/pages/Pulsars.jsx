@@ -2,7 +2,7 @@ import React from 'react'
 
 const Pulsars = () => {
   return (
-    <div>Pulsars</div>
+    <div>Celestial Wonders / Pulsars</div>
   )
 }
 

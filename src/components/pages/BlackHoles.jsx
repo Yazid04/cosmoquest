@@ -2,7 +2,7 @@ import React from 'react'
 
 const BlackHoles = () => {
   return (
-    <div>BlackHoles</div>
+    <div>Celestial Wonders / black holes</div>
   )
 }
 
