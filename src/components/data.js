@@ -18,7 +18,7 @@ export const data = [
       {
         name: "Astronomy",
         id: 103,
-        href: './CosmicExplorations/Astronomy'
+        href: '/CosmicExplorations/Astronomy'
       },
     ],
   },

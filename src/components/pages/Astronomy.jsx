@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../shared/Navbar";
 
 const Astronomy = () => {
   return (
-    <div>Cosmic Explorations / Astronomy</div>
-  )
-}
+    <section className="bg-DarkSlateGray w-full h-screen">
+      <Navbar />
+      <div>Cosmic Explorations / Astronomy</div>
+    </section>
+  );
+};
 
-export default Astronomy
+export default Astronomy;

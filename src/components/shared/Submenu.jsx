@@ -4,7 +4,7 @@ import { data } from "../data";
 import { Link } from "react-router-dom";
 
 const Submenu = () => {
-  const { location, title, showSubmenu } = useGlobalContext();
+  const { location, title, showSubmenu, closeSubmenu } = useGlobalContext();
   const current = data.find((name) => name.title === title);
 
   const submenuContainer = useRef(null);
@@ -26,7 +26,7 @@ const Submenu = () => {
       <h2 className="px-3 py-3 text-xl">{title}</h2>
       <ul className="pb-6">
         {current?.subLinks?.map((item, i) => {
-          return <li className="list-disc ml-9 py-1" key={i}><Link to={item.href}>{item.name}</Link></li>;
+          return <li className="list-disc ml-9 py-1" key={i}><Link onClick={closeSubmenu} to={item.href}>{item.name}</Link></li>;
         })}
       </ul>
     </div>

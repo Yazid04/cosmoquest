@@ -1,10 +1,13 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../shared/Navbar";
 
 const AdvancementsInRocketry = () => {
   return (
-    <div>Space Heritage and Innovation
-/ Advancements In Rocketry</div>
-  )
-}
+    <section className="bg-DarkSlateGray w-full h-screen">
+      <Navbar />
+      <div>Space Heritage and Innovation / Advancements In Rocketry</div>
+    </section>
+  );
+};
 
-export default AdvancementsInRocketry
+export default AdvancementsInRocketry;

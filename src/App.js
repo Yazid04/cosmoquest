@@ -1,11 +1,12 @@
 import React from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import Astronomy from "./components/pages/Astronomy";
 import ErrorPage from "./components/shared/ErrorPage";
 import Home from "./components/pages/Home";
+
 import WondrousWorlds from "./components/pages/WondrousWorlds";
 import SolarSystemExploration from "./components/pages/SolarSystemExploration";
+import Astronomy from "./components/pages/Astronomy";
 
 import BlackHoles from "./components/pages/BlackHoles";
 import Galaxies from "./components/pages/Galaxies";
