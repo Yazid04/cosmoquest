@@ -7,7 +7,8 @@ const AppProvider = ({ children }) => {
   const [title, setTitle] = useState("");
   const [location, setLocation] = useState({});
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
-  
+  const GLOBAL_ANIMATION_DURATION = 1000;
+
   function closeSubmenu() {
     setShowSubmenu(false);
   }
@@ -27,7 +28,11 @@ const AppProvider = ({ children }) => {
   }
 
   const handleMouseChange = (e)=>{
-    if(window.innerWidth > 1024 && e.target.className.includes('closeSubMenu')){
+    if(
+      (window.innerWidth > 1024  && e.target.tagName !== 'path') 
+      && 
+      (e.target.tagName !== 'svg' && e.target.className.includes('closeSubMenu'))
+  ){
        closeSubmenu();
     };
   }
@@ -44,6 +49,7 @@ const AppProvider = ({ children }) => {
         openSideBar,
         closeSideBar,
         isSideBarOpen,
+        GLOBAL_ANIMATION_DURATION,
       }}
     >
       {children}
