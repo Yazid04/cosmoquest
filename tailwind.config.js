@@ -5,11 +5,11 @@ module.exports = {
     extend: {
       backgroundColor: {
         "DarkSlateGray": "#2F4F4F",
-        "Silver": "#C0C0C0",
+        "Silver": "#FFFFFF"
       },
       colors:{
         "DarkSlateGray": "#2F4F4F",
-        "Silver": "#C0C0C0",
+        "Silver": "#FFFFFF",
       },
       fontFamily:{
         "Kaushan": 'Kaushan Script, cursive',
