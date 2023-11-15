@@ -11,7 +11,7 @@ export const data = [
         href: '/CosmicExplorations/WondrousWorlds'
       },
       {
-        name: "SolarSystem",
+        name: "Solar System",
         id: 102,
         href: '/CosmicExplorations/SolarSystemExploration'
       },
