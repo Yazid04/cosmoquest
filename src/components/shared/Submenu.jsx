@@ -18,12 +18,12 @@ const Submenu = () => {
   return (
     <div
       ref={submenuContainer}
-      className={`absolute transition-all w-80 rounded-sm bg-Silver ${
+      className={`absolute transition-all duration-500 ease-in-out w-80 rounded-sm bg-Silver ${
         !showSubmenu ? "hidden" : ""
       }`}
     >
-        <div className="w-full h-5 flex justify-center items-center relative"><div className="text-Silver absolute w-5 h-5 bg-Silver rotate-45 left-1/2 -top-1"></div></div>
-      <h2 className="px-3 py-3 text-xl">{title}</h2>
+        <div className="w-full h-5 flex justify-center items-center relative"><div className="text-Silver absolute w-5 h-5 bg-Silver rotate-45 left-12 -top-1 rounded-[0.18rem]"></div></div>
+      <h2 className="px-3 py-3 font-bold text-xl">{title.toUpperCase()}</h2>
       <ul className="pb-6">
         {current?.subLinks?.map((item, i) => {
           return <li className="list-disc ml-9 py-1" key={i}><Link onClick={closeSubmenu} to={item.href}>{item.name}</Link></li>;
