@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import ErrorPage from "./components/shared/ErrorPage";
-import Home from "./components/pages/Home";
+import Home from "./components/pages/Home/Home";
 
 import WondrousWorlds from "./components/pages/WondrousWorlds";
 import SolarSystemExploration from "./components/pages/SolarSystemExploration";

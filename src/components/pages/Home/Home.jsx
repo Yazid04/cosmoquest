@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "../shared/Navbar";
-import { useGlobalContext } from "../context";
-import Hero from "../shared/Hero";
+import Navbar from "../../shared/Navbar";
+import { useGlobalContext } from "../../context";
+import Hero from "../../shared/Hero"
 /*import southernRingNebula from '../static/southernRingNebula.png';*/
-import cosmicCliffs from '../static/cosmicCliffs.png';
-/*import stephansQuintet from '../static/stephansQuintet.png';*/
+import cosmicCliffs from '../../static/cosmicCliffs.png'
+import EarthOverview from "./EarthOverview";
 
 const Home = () => {
   const { handleMouseChange } = useGlobalContext();
@@ -17,6 +17,7 @@ const Home = () => {
         <Navbar />
        <Hero />
       </div>
+     <EarthOverview />
     </>
   );
 };
