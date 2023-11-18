@@ -1,37 +1,76 @@
-import React from "react";
+import React, { useRef } from "react";
 import blueDisk from "../../static/BlueDisk.jpg";
-import blueDisk2 from "../../static/BlueDisk2.jpg";
+import blueMarble from "../../static/blueMarble.jpg";
 import { FaLocationDot } from "react-icons/fa6";
 import earthlayers1 from "../../static/earthlayers1.png";
 import earthlayers2 from "../../static/earthlayers2.png";
 import PaleBlueDot from "../../static/PaleBlueDot.png";
+import earthrise from '../../static/earthrise.jpeg';
+import apollo17EarthImg from '../../static/apollo17EarthImg.jpeg'
+import apollo4EarthImg from '../../static/apollo4EarthImg.jpeg';
+import CrescentEarth from '../../static/CrescentEarth.jpg';
+import EarthCassiniPhoto from '../../static/EarthCassiniPhoto.jpeg';
+import GalileoEarthAndMoon from '../../static/GalileoEarthAndMoon.jpeg';
+
 
 const EarthOverview = () => {
-  return (
+
+    const boxRef = useRef(null);
+    let degrees = 0;
+
+const handleGalleryScroll = (e)=>{
+    const box = boxRef.current;
+    const text = e.target.textContent;
+    if(text === "Next"){
+      degrees -= 45;
+        box.style = `transform: perspective(1000px) rotateY(${degrees}deg);`
+    } else if (text === "Prev"){
+        degrees += 45;
+        box.style = `transform: perspective(1000px) rotateY(${degrees}deg);`
+    }
+}
+
+
+    return (
     <>
       <section className="w-full p-20 bg-DarkerSilver">
+       
         <div className="w-full pb-10">
-          <div className="flex h-full items-center gap-x-5">
+          <div className="flex h-full justify-center items-center gap-x-5">
             <FaLocationDot className="text-3xl font-bold" />
             <h3 className="text-3xl font-Playpen font-bold">Home</h3>
           </div>
         </div>
 
-        <div className="pb-10 w-[31%] h-[25rem]">
-          <img
-            src={blueDisk}
-            className="w-full h-full"
-            alt="Full disk image of Earth"
-          />
+        <div className="parent pb-10">
+          <div className="container">
+            <div className="box" ref={boxRef}>
+                <span ><img src={blueDisk} alt="blueDisk image of Earth" /></span>
+                <span ><img src={earthrise} alt="earthrise image of Earth" /></span>
+                <span ><img src={apollo17EarthImg} alt="apollo 17 Earth image" /></span>
+                <span ><img src={blueMarble} alt="blueMarble image of Earth" /></span>
+                <span ><img src={apollo4EarthImg} alt="apollo 4 Earth image" /></span>
+                <span ><img src={EarthCassiniPhoto} alt="Earth Cassini image" /></span>
+                <span ><img src={CrescentEarth} alt="Crescent Earth image" /></span>
+                <span ><img src={GalileoEarthAndMoon} alt="Galileo Earth And Moon image" /></span>
+    
+            </div>
+            <div className="btns p-10">
+              <div onClick={(e) => handleGalleryScroll(e)} className="btn">Prev</div>
+              <div onClick={(e) => handleGalleryScroll(e)} className="btn">Next</div>
+            </div>
+          </div>
         </div>
 
-        <div className="w-[80%] py-10">
+        <div className="w-[80%] mx-auto py-10">
+     
           <p className="font-Playpen leading-loose pb-10">
             Our home, Earth, is a rocky planet, similar to Mercury, Venus, and
             Mars. It's composed of 70% water and 30% land. The structure of
             Earth is divided into four major components: the crust, the mantle,
             the outer core, and the inner core.
           </p>
+     
           <div className="flex justify-evenly items-center">
             <div className="pb-10 w-full h-full">
               <img
@@ -49,6 +88,7 @@ const EarthOverview = () => {
               />
             </div>
           </div>
+     
           <p className="pb-10">
             The crust, where we reside, is approximately 30 km thick. Earth's
             crust consists of continental crust (lighter) and oceanic crust
@@ -66,11 +106,13 @@ const EarthOverview = () => {
             kilometers (2,165 miles). The outer core's temperature ranges from
             4,400 °C in the outer regions to 6,100 °C near the inner core.
           </p>
+     
           <p className="pb-10">
             Earth is the third planet from the sun, situated in the "Goldilocks
             Zone" or "habitable zone." When Earth orbits the Sun, it's just the
             right distance for liquid water to remain a liquid and not boil.
           </p>
+     
           <div className="pb-10">
             <li>Mass: {"5.972 × 10^24"} kg </li>
             <li>Radius: 6,371 km </li>
@@ -78,6 +120,7 @@ const EarthOverview = () => {
             <li>Surface area: 510.1 million km² </li>
             <li>Land area: 148.9 million km² </li>
           </div>
+     
           <p className="pb-10">
             To the best of geological evidence, Earth is estimated to be 4.54
             billion years old, with an uncertainty of approximately 50 million
@@ -85,17 +128,20 @@ const EarthOverview = () => {
             rocks to radiometrically date, and in northwestern Canada, they
             discovered rocks about 4.03 billion years old.
           </p>
+     
           <p className="pb-10">
             Perhaps, there is nothing better to finish this overview of our home
             than the famous excerpt from Carl Sagan's book Pale Blue Dot.
           </p>
-          <div className="pb-10 w-full h-full">
+     
+          <div className="pb-10 w-full flex justify-center h-full">
             <img
               src={PaleBlueDot}
               className="w-[27rem] h-[20rem]"
               alt="Full disk image of Earth"
             />
           </div>
+     
           <div className="p-10 rounded-md shadow-md pb-10 bg-Silver">
           <p className="pb-5 font-Playpen">
             "Look again at that dot. That's here. That's home. That's us. On it
@@ -144,13 +190,18 @@ const EarthOverview = () => {
         <p className="pb-5 font-bold">
           — Carl Sagan, Pale Blue Dot, 1994
         </p>
+        
+          </div>
+   
         </div>
-        </div>
+     
       </section>
     </>
   );
 };
 
 export default EarthOverview;
+
+// add info to both pics4
 
 // improve earth pic and layers content visually
