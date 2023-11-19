@@ -62,44 +62,13 @@ const EarthOverview = () => {
       id: 507,
       link: "https://science.nasa.gov/resource/crescent-earth/",
       imageLink: CrescentEarth,
-      text: "Waning crescent earth seen from the moon",
+      text: "Waning crescent Earth seen from the moon",
     },
   ];
 
-  const parentDivStyle = {
-      "position": "relative",
-      "backgroundColor": "#000",
-      "height": "40rem",
-      "display": "grid",
-      "placeContent": "center",
-      "zIndex": "0",
-  }
-
-  const boxDivStyle = {
-      "position": "relative",
-      "width": "250px",
-      "height": "230px",
-      "transformStyle": "preserve-3d",
-      "transition": "1.5s",
-      "transform": "perspective(1000px) rotateY(0deg)",
-  }
-
-  const childStyles = {
-      "--i": "1",
-      "position": "absolute",
-      "top": "0",
-      "left": "0",
-      "width": "100%",
-      "height": "100%",
-      "transformOrigin": "center",
-      "transformStyle": "preserve-3d",
-      "transform": "rotateY(calc(var(--i) * 45deg)) translateZ(400px)",
-      "WebkitBoxReflect": "below 0px linear-gradient(transparent, transparent, #0004)",
-  }
-
   const boxRef = useRef(null);
+  
   let degrees = 0;
-
   const handleGalleryScroll = (e) => {
     const box = boxRef.current;
     const text = e.target.textContent;
@@ -122,30 +91,38 @@ const EarthOverview = () => {
           </div>
         </div>
 
-        <div className="pb-10" style={parentDivStyle}>
-          <div className="">
-            <div className="box" style={boxDivStyle} ref={boxRef}>
-            {images.map((image) => {
-                const { id, link, imageLink, text } = image;
+        <div className="wrapper relative bg-[#000] w-[65rem] h-[35rem] mx-auto grid place-content-center" style={{  transformStyle: "preserve-3d" }}>
+          <div className="wrapper-center">
+            <div className="box relative w-[210px] h-[200px] transition-all duration-1000" ref={boxRef}>
+              {images.map((image, idx) => {
+                const { id, imageLink, text } = image;
                 return (
-                    <span style={childStyles} key={id}>
-                      <img
-                        src={imageLink}
-                        alt="Earth from space"
-                        className="w-full h-full absolute top-0 left-0 object-cover z-[1] select-none"
-                      />
-                      <div className="absolute -top-10 cursor-pointer text-[8px] text-[white] bg-[green] h-10 w-full grid place-content-center">
-                        <Link to={link}>{text}</Link>
-                      </div>
-                    </span>
+                  <span style={{'--i': idx+1}}
+                    className="absolute top-0 left-0 w-full h-full grid place-content-center bg-DarkSlateGray origin-center"
+                    key={id}>
+                    <img
+                      src={imageLink}
+                      alt="Earth from space"
+                      className="w-[85%] h-[85%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover z-[1] select-none"
+                    />
+                    <div className="absolute -top-10 text-[8px] text-[white] bg-DarkSlateGray px-2 h-10 w-full grid place-content-center">
+                      <p>{text}</p>
+                    </div>
+                  </span>
                 );
               })}
             </div>
-            <div className="p-10 absolute bottom-0 left-0 flex justify-center items-center gap-10 w-full">
-              <div onClick={(e) => handleGalleryScroll(e)} className="relative w-24 h-12 border-[Silver] border-[3px] text-Silver cursor-pointer rounded-3xl flex justify-center items-center">
+            <div className="p-5 absolute bottom-0 left-0 flex justify-center items-center gap-5 w-full">
+              <div
+                onClick={(e) => handleGalleryScroll(e)}
+                className="relative w-24 h-12 border-[Silver] border-[3px] text-Silver cursor-pointer rounded-3xl flex justify-center items-center"
+              >
                 Prev
               </div>
-              <div onClick={(e) => handleGalleryScroll(e)} className="relative w-24 h-12 border-[Silver] border-[3px] text-Silver cursor-pointer rounded-3xl flex justify-center items-center">
+              <div
+                onClick={(e) => handleGalleryScroll(e)}
+                className="relative w-24 h-12 border-[Silver] border-[3px] text-Silver cursor-pointer rounded-3xl flex justify-center items-center"
+              >
                 Next
               </div>
             </div>
@@ -186,12 +163,24 @@ const EarthOverview = () => {
 
           <p className="pb-10">
             The crust, where we reside, is approximately 30 km (18.6 miles)
-            thick. Earth's crust consists of <Link className="font-bold" to={"https://en.wikipedia.org/wiki/Continental_crust"}>continental crust </Link> 
-            (lighter) and <Link className="font-bold" to={"https://en.wikipedia.org/wiki/Oceanic_crust"}>oceanic crust </Link>
-            (denser). The most abundant elements in Earth's crust
-            are oxygen and silicon. The mantle, the largest layer of Earth's
-            interior, is mostly solid rock but behaves like a viscous fluid over
-            long periods. It's located between the Earth's core and crust,
+            thick. Earth's crust consists of{" "}
+            <Link
+              className="font-bold"
+              to={"https://en.wikipedia.org/wiki/Continental_crust"}
+            >
+              continental crust{" "}
+            </Link>
+            (lighter) and{" "}
+            <Link
+              className="font-bold"
+              to={"https://en.wikipedia.org/wiki/Oceanic_crust"}
+            >
+              oceanic crust{" "}
+            </Link>
+            (denser). The most abundant elements in Earth's crust are oxygen and
+            silicon. The mantle, the largest layer of Earth's interior, is
+            mostly solid rock but behaves like a viscous fluid over long
+            periods. It's located between the Earth's core and crust,
             approximately 2,900 kilometers (1,802 miles) thick, making up about
             84% of Earth's volume. The mantle is composed of silicate rock,
             magnesium, silicon, iron, and oxygen. The core, Earth's dense, hot
@@ -315,8 +304,7 @@ export default EarthOverview;
 // add info to pics / DONE
 // add links to texts in the paragraphs / DONE
 // improve visiuality / DONE
-
-// fix errors 
-// replace the css styles with tailwind's 
-// make all of that responsive
+// fix errors / DONE
+// replace the css styles with tailwind's / DONE
 // apply a footer / DONE
+// make all of that responsive
