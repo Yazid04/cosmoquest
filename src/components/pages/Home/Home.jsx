@@ -5,6 +5,7 @@ import Hero from "../../shared/Hero"
 /*import southernRingNebula from '../static/southernRingNebula.png';*/
 import cosmicCliffs from '../../static/cosmicCliffs.png'
 import EarthOverview from "./EarthOverview";
+import { Footer } from "../../shared/Footer"; 
 
 const Home = () => {
   const { handleMouseChange } = useGlobalContext();
@@ -18,6 +19,7 @@ const Home = () => {
        <Hero />
       </div>
      <EarthOverview />
+     <Footer />
     </>
   );
 };

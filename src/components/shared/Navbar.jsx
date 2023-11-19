@@ -37,8 +37,8 @@ const Navbar = () => {
         
         {data.map(({title, id}) => {
              return (
-              <animated.div style={fadeIn}>
-          <li key={id} onMouseOver={disyplaySubmenu} className="list-none">
+              <animated.div style={fadeIn} key={id}>
+          <li onMouseOver={disyplaySubmenu} className="list-none">
             <button className="text-base">{title}</button>
           </li>
         </animated.div>
