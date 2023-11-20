@@ -27,10 +27,10 @@ const Navbar = () => {
 
   return (
     <>
-      <main onMouseOver={handleMouseChange} className="closeSubMenu w-full pt-6 px-20 h-20 flex justify-between items-end font-Playpen max-lg:px-10 max-lg:py-0 max-lg:items-center max-lg:h-24">
+      <main onMouseOver={handleMouseChange} className="closeSubMenu w-full pt-6 px-20 h-20 flex justify-between items-end font-Playpen mx-auto max-lg:px-10 max-lg:py-0 max-lg:items-center max-lg:h-24 max-w-[1920px] 2xl:mt-6">
         <div className="closeSubMenu flex-[1]">
         <animated.div style={fadeIn}>
-          <h1 className="closeSubMenu text-3xl text-Silver max-lg:text-2xl"><Link to={'/'}>CosmoQuest</Link> </h1>
+          <h1 className="closeSubMenu text-3xl pt-6 text-Silver max-lg:text-2xl 2xl:text-5xl"><Link to={'/'}>CosmoQuest</Link> </h1>
         </animated.div>
         </div>
         <div className="flex justify-evenly items-center flex-[2] h-full text-Silver max-lg:hidden">
@@ -39,7 +39,7 @@ const Navbar = () => {
              return (
               <animated.div style={fadeIn} key={id}>
           <li onMouseOver={disyplaySubmenu} className="list-none">
-            <button className="text-base">{title}</button>
+            <button className="text-base 2xl:text-xl">{title}</button>
           </li>
         </animated.div>
              )

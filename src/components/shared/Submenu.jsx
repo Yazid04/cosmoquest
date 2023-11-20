@@ -18,7 +18,7 @@ const Submenu = () => {
   return (
     <div
       ref={submenuContainer}
-      className={`absolute transition-all duration-500 ease-in-out w-80 rounded-sm bg-Silver ${
+      className={`absolute transition-all z-10 duration-500 ease-in-out w-80 rounded-sm bg-Silver ${
         !showSubmenu ? "hidden" : ""
       }`}
     >
