@@ -1,10 +1,8 @@
 import React, { useEffect, useRef } from "react";
-import { FaLocationDot } from "react-icons/fa6";
 import earthlayers1 from "../../static/earthlayers1.png";
 import earthlayers2 from "../../static/earthlayers2.png";
 import PaleBlueDot from "../../static/PaleBlueDot.png";
 import { Link } from "react-router-dom";
-
 import earthrise from "../../static/earthrise.jpeg";
 import blueDisk from "../../static/BlueDisk.jpg";
 import apollo17EarthImg from "../../static/apollo17EarthImg.jpeg";
@@ -68,14 +66,14 @@ const EarthOverview = () => {
     },
   ];
   const divRef = useRef(null);
+  const boxRef = useRef(null);
 
   useEffect(() => {
     const div = divRef.current;
     const divPos = div?.getBoundingClientRect().top;
     setGalleryPosition(divPos);
-  },[])
+  },[setGalleryPosition])
 
-  const boxRef = useRef(null);
   
   let degrees = 0;
   const handleGalleryScroll = (e) => {
@@ -92,12 +90,11 @@ const EarthOverview = () => {
 
   return (
     <>
-      <section className="w-full p-20 bg-DarkerSilver max-lg:px-0 max-w-[1920px] mx-auto">
+      <section className="w-full bg-DarkerSilver max-lg:px-0 max-w-[1920px] mx-auto">
    
-        <div className="w-full pb-10" ref={divRef}>
-          <div className="flex h-full justify-center items-center gap-x-5">
-            <FaLocationDot className="text-3xl font-bold" />
-            <h3 className="text-3xl font-Playpen font-bold">Home</h3>
+        <div className="w-full h-36" ref={divRef}>
+          <div className="flex h-full w-[90%] mx-auto justify-center items-center">
+            <h3 className="text-xl text-center font-Playpen font-bold md:text-3xl">Earthscapes: Capturing the Majesty of Our Home</h3>
           </div>
         </div>
 
