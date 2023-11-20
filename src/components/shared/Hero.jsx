@@ -5,13 +5,24 @@ import { useGlobalContext } from '../context';
 
 const Hero = () => {
     
-  const {GLOBAL_ANIMATION_DURATION} = useGlobalContext
+  const {GLOBAL_ANIMATION_DURATION, galleryPosition} = useGlobalContext()
   
   const fadeIn = useSpring({
       opacity: 1,
       from: { opacity: 0 },
       config: { duration: GLOBAL_ANIMATION_DURATION },
     });
+
+
+    const scrollToTarget = () => {
+      // Scroll down 700 pixels
+      
+        window.scrollTo({
+          top: galleryPosition,
+          behavior: 'smooth'
+        });
+      
+    };
 
 
   return (
@@ -25,7 +36,7 @@ const Hero = () => {
     </div>
  
     <div className='md:text-center lg:text-start 2xl:text-center'>
-      <button
+      <button onClick={scrollToTarget}
         type="button"
         className="bg-Silver text-DarkSlateGray font-bold transition duration-300 p-2 rounded-md 2xl:p-8 2xl:text-4xl">
         Start Exploring

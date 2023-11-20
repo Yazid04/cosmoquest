@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import earthlayers1 from "../../static/earthlayers1.png";
 import earthlayers2 from "../../static/earthlayers2.png";
@@ -13,8 +13,10 @@ import apollo4EarthImg from "../../static/apollo4EarthImg.jpeg";
 import GalileoEarthAndMoon from "../../static/GalileoEarthAndMoon.jpeg";
 import EarthCassiniPhoto from "../../static/EarthCassiniPhoto.jpeg";
 import CrescentEarth from "../../static/CrescentEarth.jpg";
+import { useGlobalContext } from "../../context";
 
 const EarthOverview = () => {
+  const {setGalleryPosition} = useGlobalContext();
   const images = [
     {
       id: 500,
@@ -65,6 +67,13 @@ const EarthOverview = () => {
       text: "Waning crescent Earth seen from the moon",
     },
   ];
+  const divRef = useRef(null);
+
+  useEffect(() => {
+    const div = divRef.current;
+    const divPos = div?.getBoundingClientRect().top;
+    setGalleryPosition(divPos);
+  },[])
 
   const boxRef = useRef(null);
   
@@ -85,7 +94,7 @@ const EarthOverview = () => {
     <>
       <section className="w-full p-20 bg-DarkerSilver max-lg:px-0 max-w-[1920px] mx-auto">
    
-        <div className="w-full pb-10">
+        <div className="w-full pb-10" ref={divRef}>
           <div className="flex h-full justify-center items-center gap-x-5">
             <FaLocationDot className="text-3xl font-bold" />
             <h3 className="text-3xl font-Playpen font-bold">Home</h3>

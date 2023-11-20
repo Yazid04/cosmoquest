@@ -5,6 +5,7 @@
 
 body{
   background-color: #D9D9D9;
+  scroll-behavior: smooth;
 }
 
 /* Box Div */
