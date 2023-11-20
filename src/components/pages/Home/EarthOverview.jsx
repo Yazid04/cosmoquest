@@ -83,7 +83,8 @@ const EarthOverview = () => {
 
   return (
     <>
-      <section className="w-full p-20 bg-DarkerSilver">
+      <section className="w-full p-20 bg-DarkerSilver max-lg:px-0 max-w-[1920px] mx-auto">
+   
         <div className="w-full pb-10">
           <div className="flex h-full justify-center items-center gap-x-5">
             <FaLocationDot className="text-3xl font-bold" />
@@ -91,9 +92,9 @@ const EarthOverview = () => {
           </div>
         </div>
 
-        <div className="wrapper relative bg-[#000] w-[65rem] h-[35rem] mx-auto grid place-content-center" style={{  transformStyle: "preserve-3d" }}>
+        <div className="wrapper relative bg-[#000] overflow-hidden w-[90%] h-[35rem] mx-auto grid place-content-center max-lg:w-[90%]" style={{  transformStyle: "preserve-3d" }}>
           <div className="wrapper-center">
-            <div className="box relative w-[210px] h-[200px] transition-all duration-1000" ref={boxRef}>
+            <div className="box relative w-[210px] h-[200px] transition-all duration-1000 max-lg:w-[140px] max-lg:h-[130px]" ref={boxRef}>
               {images.map((image, idx) => {
                 const { id, imageLink, text } = image;
                 return (
@@ -105,7 +106,7 @@ const EarthOverview = () => {
                       alt="Earth from space"
                       className="w-[85%] h-[85%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover z-[1] select-none"
                     />
-                    <div className="absolute -top-10 text-[8px] text-[white] bg-DarkSlateGray px-2 h-10 w-full grid place-content-center">
+                    <div className="absolute -top-10 text-center text-[8px] text-[white] bg-DarkSlateGray px-2 pt-3 h-10 w-full grid place-content-center">
                       <p>{text}</p>
                     </div>
                   </span>
@@ -143,7 +144,7 @@ const EarthOverview = () => {
             : the crust, the mantle, the outer core, and the inner core.
           </p>
 
-          <div className="flex justify-evenly items-center">
+          <div className="flex justify-center items-center max-lg:flex-col">
             <div className="pb-10 w-full h-full">
               <img
                 src={earthlayers2}
@@ -294,17 +295,10 @@ const EarthOverview = () => {
             <p className="pb-5 font-bold">— Carl Sagan, Pale Blue Dot, 1994</p>
           </div>
         </div>
+   
       </section>
     </>
   );
 };
 
 export default EarthOverview;
-
-// add info to pics / DONE
-// add links to texts in the paragraphs / DONE
-// improve visiuality / DONE
-// fix errors / DONE
-// replace the css styles with tailwind's / DONE
-// apply a footer / DONE
-// make all of that responsive

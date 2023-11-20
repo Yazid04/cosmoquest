@@ -20,7 +20,7 @@ const Sidebar = () => {
             : "-z-10 invisible scale-[0] delay-200"
         }`}>
     
-        <section className="absolute top-[40%] -translate-y-[40%] left-1/2 -translate-x-[50%] h-[85%] w-[90%] p-5 z-20 shadow-lg rounded-md flex flex-col justify-start opacity-[1] bg-Silver m-0">
+        <section className="absolute top-[40%] -translate-y-[40%] left-1/2 -translate-x-[50%] h-min w-[90%] p-5 z-20 shadow-lg rounded-md flex flex-col justify-start opacity-[1] bg-Silver m-0">
        
         <div className="w-full flex justify-end items-center">
           <AiOutlineClose
@@ -31,7 +31,7 @@ const Sidebar = () => {
         {data.map(item => {
             const { subLinks, title, id } = item;
             return (
-              <div key={id} className="mb-10">
+              <div key={id} className="mb-10 text-start">
                 <div className="py-2">
                   <h1 className="text-2xl">{title}</h1>
                 </div>

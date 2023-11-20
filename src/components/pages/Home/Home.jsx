@@ -12,13 +12,12 @@ const Home = () => {
 
   return (
     <>
-      <div
+      <section
         onMouseOver={handleMouseChange}
-        className="closeSubMenu overflow-hidden w-full h-screen relative bg-center bg-cover" style={{backgroundImage: `url(${cosmicCliffs})`}}>
+        className="closeSubMenu overflow-hidden max-w-[3000px] text-center mx-auto h-screen relative bg-center bg-cover" style={{backgroundImage: `url(${cosmicCliffs})`}}>
         <Navbar />
        <Hero />
-      </div>
-    
+      </section>
      <EarthOverview />
      <Footer />
     </>

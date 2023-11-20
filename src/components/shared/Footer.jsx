@@ -5,7 +5,7 @@ export const Footer = () => {
     const date = new Date().getFullYear();
  
   return (
-    <section className={`w-full h-min font-sourceSansPro py-5 max-w-[85rem] mx-auto mt-10 grid place-content-center`}>
+    <section className={`w-full h-min font-sourceSansPro bg-Silver max-w-[85rem] mx-auto grid place-content-center`}>
        <div className='w-min h-min px-3'>
          <div className='flex items-center gap-x-3 min-w-[18rem] justify-around my-4'>           
          </div>
