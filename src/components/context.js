@@ -21,10 +21,12 @@ const AppProvider = ({ children }) => {
 
   function openSideBar(){
     setIsSideBarOpen(true)
+    document.body.style.overflow = 'hidden';
   }
 
   function closeSideBar(){
     setIsSideBarOpen(false);
+    document.body.style.overflow = 'auto';
   }
 
   const handleMouseChange = (e)=>{

@@ -18,6 +18,7 @@ const Home = () => {
         <Navbar />
        <Hero />
       </div>
+    
      <EarthOverview />
      <Footer />
     </>
