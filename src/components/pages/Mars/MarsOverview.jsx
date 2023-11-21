@@ -1,9 +1,22 @@
-import React from "react";
-//import { data } from "./MarsData";
+import React, {useState} from "react";
+import { data } from "./MarsData";
 import { Link } from "react-router-dom";
+import { FaArrowLeftLong } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa6";
+
 import MarsComparisonCatalog from './photos/MarsComparisonCatalog.png'
 
 const MarsOverview = () => {
+
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    const nextSlide = () => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % data.length);
+    };
+  
+    const prevSlide = () => {
+      setActiveIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length);
+    };
 
     return (
     <main className="w-[80%] mx-auto mt-20 py-5">
@@ -97,7 +110,7 @@ const MarsOverview = () => {
         </p>
       </div>
       <div className="mb-14">
-        <iframe src='https://mars.nasa.gov/embed/27696/' title="NASA’s Curiosity Mars rover captured this 360-degree panorama while parked below Gediz Vallis Ridge (the hill-like slope at right)." width='100%' height='400'  scrolling='no' frameborder='0'></iframe>
+        <iframe src='https://mars.nasa.gov/embed/27696/' title="NASA’s Curiosity Mars rover captured this 360-degree panorama while parked below Gediz Vallis Ridge (the hill-like slope at right)." width='100%' height='400'  scrolling='no' frameBorder='0'></iframe>
       </div>
       <div className="mb-14">
         <h2 className="text-4xl mb-5 text-DarkSlateGray">Rovers and Landers:</h2>
@@ -123,8 +136,33 @@ const MarsOverview = () => {
           exploration.
         </p>
       </div>
-
-      <div>text</div>
+ 
+      <div aria-label="Newest Photos" className="mb-14">
+      <div className="w-full h-64 bg-[green] relative">
+        <button
+          className="absolute top-1/2 -translate-y-1/2 bg-[#f5f5f586] cursor-pointer z-10 w-10 h-10 flex justify-center items-center left-0 -translate-x-0 text-2xl"
+          onClick={prevSlide}
+        >
+          <FaArrowLeftLong />
+        </button>
+        <button
+          className="absolute top-1/2 -translate-y-1/2 bg-[#f5f5f586] cursor-pointer z-10 w-10 h-10 flex justify-center items-center right-0 -translate-x-0 text-2xl"
+          onClick={nextSlide}
+        >
+          <FaArrowRight />
+        </button>
+        <ul>
+          {data.map((item, index) => (
+            <li
+              key={item.id}
+              className={`absolute inset-0 ${index === activeIndex ? 'opacity-100' : 'opacity-0'} transition-all duration-1000 ease-in-out`}
+              data-active={index === activeIndex}>
+              <img src={item.image} alt={item.description} className="block w-full h-full object-cover" />
+            </li>
+          ))}
+        </ul>
+      </div>
+      </div>
     
     </main>
   );
