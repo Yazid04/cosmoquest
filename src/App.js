@@ -6,7 +6,7 @@ import Home from "./components/pages/Home/Home";
 
 import WondrousWorlds from "./components/pages/WondrousWorlds";
 import SolarSystemExploration from "./components/pages/SolarSystemExploration";
-import Astronomy from "./components/pages/Astronomy";
+import Mars from "./components/pages/Mars";
 
 import BlackHoles from "./components/pages/BlackHoles";
 import Galaxies from "./components/pages/Galaxies";
@@ -29,7 +29,7 @@ function App() {
           path="/CosmicExplorations/SolarSystemExploration"
           element={<SolarSystemExploration />}
         />
-        <Route path="/CosmicExplorations/Astronomy" element={<Astronomy />} />
+        <Route path="/CosmicExplorations/Mars" element={<Mars />} />
 
         <Route path="/CelestialWonders/BlackHoles" element={<BlackHoles />} />
 

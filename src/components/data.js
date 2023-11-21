@@ -16,9 +16,9 @@ export const data = [
         href: '/CosmicExplorations/SolarSystemExploration'
       },
       {
-        name: "Astronomy",
+        name: "Mars",
         id: 103,
-        href: '/CosmicExplorations/Astronomy'
+        href: '/CosmicExplorations/Mars'
       },
     ],
   },
