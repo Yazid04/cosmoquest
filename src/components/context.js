@@ -35,7 +35,7 @@ const AppProvider = ({ children }) => {
       (window.innerWidth > 1024  && e.target.tagName !== 'path') 
       && 
       (e.target.tagName !== 'svg' && e.target.className.includes('closeSubMenu'))
-  ){
+      ){
        closeSubmenu();
     };
   }
