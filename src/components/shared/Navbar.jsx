@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <>
-      <main onMouseOver={handleMouseChange} className="closeSubMenu w-[85%] mt-5 h-20 flex justify-between items-end font-Playpen mx-auto max-lg:py-0 max-lg:items-center max-lg:h-24">
+      <main onMouseOver={handleMouseChange} className="closeSubMenu w-[85%] pt-24 h-20 flex justify-between items-end font-Playpen mx-auto max-lg:py-0 max-lg:items-center max-lg:h-24">
         
         <div className="closeSubMenu flex-[1] flex items-center h-[inherit]">
         <animated.div style={fadeIn}>
