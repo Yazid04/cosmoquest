@@ -3,13 +3,12 @@ import { data } from "./MarsData";
 import { Link } from "react-router-dom";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
-
 import MarsComparisonCatalog from './photos/MarsComparisonCatalog.png'
 
 const MarsOverview = () => {
 
     const [activeIndex, setActiveIndex] = useState(0);
-
+    const imgeDescription = data[activeIndex].description;
     const nextSlide = () => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % data.length);
     };
@@ -162,6 +161,7 @@ const MarsOverview = () => {
           ))}
         </ul>
       </div>
+      <h2 className="my-5 text-center font-bold">{imgeDescription}</h2>
       </div>
     
     </main>
