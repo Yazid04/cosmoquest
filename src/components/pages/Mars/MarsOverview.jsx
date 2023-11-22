@@ -18,7 +18,7 @@ const MarsOverview = () => {
     };
 
     return (
-    <main className="w-[80%] mx-auto mt-20 py-5">
+    <main className="w-[80%] mx-auto mt-20 py-5 max-w-7xl">
       <div className="mb-14">
         <h2 className="text-4xl mb-5 text-DarkSlateGray">Introduction: </h2>
         <p className="leading-relaxed">
@@ -45,7 +45,7 @@ const MarsOverview = () => {
           secrets and unraveling the mysteries of its past.
         </p>
       </div>
-      <div className="mb-14">
+      <div className="mb-14 max-w-xl">
         <img
           className="w-full h-full object-cover"
           src={MarsComparisonCatalog}
@@ -136,25 +136,23 @@ const MarsOverview = () => {
         </p>
       </div>
  
-      <div aria-label="Newest Photos" className="mb-14">
-      <div className="w-full h-64 bg-[green] relative">
+      <div className="mb-14">
+      <div className="w-full h-64 bg-[green] relative md:h-96 xl:h-[30rem]">
         <button
           className="absolute top-1/2 -translate-y-1/2 bg-[#f5f5f586] cursor-pointer z-10 w-10 h-10 flex justify-center items-center left-0 -translate-x-0 text-2xl"
-          onClick={prevSlide}
-        >
+          onClick={prevSlide}>
           <FaArrowLeftLong />
         </button>
         <button
           className="absolute top-1/2 -translate-y-1/2 bg-[#f5f5f586] cursor-pointer z-10 w-10 h-10 flex justify-center items-center right-0 -translate-x-0 text-2xl"
-          onClick={nextSlide}
-        >
+          onClick={nextSlide}>
           <FaArrowRight />
         </button>
         <ul>
           {data.map((item, index) => (
             <li
               key={item.id}
-              className={`absolute inset-0 ${index === activeIndex ? 'opacity-100' : 'opacity-0'} transition-all duration-1000 ease-in-out`}
+              className={`absolute inset-0 ${index === activeIndex ? 'opacity-100' : 'opacity-0'} transition-all duration-700 ease-in-out`}
               data-active={index === activeIndex}>
               <img src={item.image} alt={item.description} className="block w-full h-full object-cover" />
             </li>
