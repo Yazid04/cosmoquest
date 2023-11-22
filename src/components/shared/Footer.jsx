@@ -3,7 +3,7 @@ import {RiCopyrightLine} from 'react-icons/ri'
 
 export const Footer = () => {
     const date = new Date().getFullYear();
- 
+
   return (
     <section className={`w-full h-min font-sourceSansPro bg-Silver max-w-[85rem] mx-auto grid place-content-center`}>
        <div className='w-min h-min px-3'>
@@ -17,7 +17,7 @@ export const Footer = () => {
              <li className='list-none'><button>FAQ</button></li>
          </div>
          <div className={` mb-4 md:w-72 text-DarkSlateGray grid place-content-center`}>
-           <h1 className='text-3xl font-bold'>CosmosQuest</h1>
+           <h1 className='text-3xl font-bold'>CosmoQuest</h1>
          </div>
          </div>
          <div className='flex items-center justify-center h-10'>
