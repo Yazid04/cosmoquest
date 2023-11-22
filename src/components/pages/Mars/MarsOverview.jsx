@@ -1,24 +1,31 @@
-import React, {useState} from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { data } from "./MarsData";
 import { Link } from "react-router-dom";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
-import MarsComparisonCatalog from './photos/MarsComparisonCatalog.png'
+import MarsComparisonCatalog from "./photos/MarsComparisonCatalog.png";
+import { useMarsContext } from "./marsContext";
 
-const MarsOverview = () => {
+const MarsOverview = ({ result, onResult }) => {
+  const { setOverviewSectionPosition } = useMarsContext();
+  const [activeIndex, setActiveIndex] = useState(0);
+  const imgeDescription = data[activeIndex].description;
+  const nextSlide = () => {
+    setActiveIndex((prevIndex) => (prevIndex + 1) % data.length);
+  };
+  const prevSlide = () => {
+    setActiveIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length);
+  };
 
-    const [activeIndex, setActiveIndex] = useState(0);
-    const imgeDescription = data[activeIndex].description;
-    const nextSlide = () => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % data.length);
-    };
-  
-    const prevSlide = () => {
-      setActiveIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length);
-    };
+  const overviewRef = useRef();
+  useEffect(() => {
+    const refElement = overviewRef.current;
+    const height = refElement.getBoundingClientRect().top;
+    setOverviewSectionPosition(height);
+  }, []);
 
-    return (
-    <main className="w-[80%] mx-auto mt-20 py-5 max-w-7xl">
+  return (
+    <main className="w-[80%] mx-auto mt-20 py-5 max-w-7xl" ref={overviewRef}>
       <div className="mb-14">
         <h2 className="text-4xl mb-5 text-DarkSlateGray">Introduction: </h2>
         <p className="leading-relaxed">
@@ -53,7 +60,9 @@ const MarsOverview = () => {
         />
       </div>
       <div className="mb-14">
-        <h2 className="text-4xl mb-5 text-DarkSlateGray">Mars Exploration History:</h2>
+        <h2 className="text-4xl mb-5 text-DarkSlateGray">
+          Mars Exploration History:
+        </h2>
         <p className="leading-relaxed">
           The exploration of Mars has been a testament to human ingenuity and
           the relentless pursuit of knowledge. Early observations from Earth
@@ -62,10 +71,9 @@ const MarsOverview = () => {
             className="font-bold"
             to={"https://science.nasa.gov/resource/dry-ice-on-mars/"}
           >
-          {" "}
+            {" "}
             polar ice caps
-          </Link> 
-          {" "}
+          </Link>{" "}
           and changing surface features. However, it wasn't until the mid-20th
           century that spacecraft exploration began. The Mariner missions of the
           1960s provided the first close-up images of Mars, paving the way for
@@ -85,7 +93,9 @@ const MarsOverview = () => {
         </p>
       </div>
       <div className="mb-14">
-        <h2 className="text-4xl mb-5 text-DarkSlateGray">Mars' Atmosphere and Climate: </h2>
+        <h2 className="text-4xl mb-5 text-DarkSlateGray">
+          Mars' Atmosphere and Climate:{" "}
+        </h2>
         <p className="leading-relaxed">
           Mars, once possessing a thicker atmosphere, has an atmosphere that is
           now thin and composed mostly of carbon dioxide. With an average
@@ -109,10 +119,23 @@ const MarsOverview = () => {
         </p>
       </div>
       <div className="mb-14">
-        <iframe src='https://mars.nasa.gov/embed/27696/' title="NASA’s Curiosity Mars rover captured this 360-degree panorama while parked below Gediz Vallis Ridge (the hill-like slope at right)." width='100%' height='400'  scrolling='no' frameBorder='0'></iframe>
+        <h2 className="mb-7 font-bold">
+          NASA’s Curiosity Mars rover captured this 360-degree panorama while
+          parked below Gediz Vallis Ridge (the hill-like slope at right).
+        </h2>
+        <iframe
+          src="https://mars.nasa.gov/embed/27696/"
+          title="NASA’s Curiosity Mars rover captured this 360-degree panorama while parked below Gediz Vallis Ridge (the hill-like slope at right)."
+          width="100%"
+          height="400"
+          scrolling="no"
+          frameBorder="0"
+        ></iframe>
       </div>
       <div className="mb-14">
-        <h2 className="text-4xl mb-5 text-DarkSlateGray">Rovers and Landers:</h2>
+        <h2 className="text-4xl mb-5 text-DarkSlateGray">
+          Rovers and Landers:
+        </h2>
         <p className="leading-relaxed">
           The exploration of Mars has been greatly advanced by a series of
           rovers and landers, each contributing to our understanding of the
@@ -135,33 +158,41 @@ const MarsOverview = () => {
           exploration.
         </p>
       </div>
- 
+
       <div className="mb-14">
-      <div className="w-full h-64 bg-[green] relative md:h-96 xl:h-[30rem]">
-        <button
-          className="absolute top-1/2 -translate-y-1/2 bg-[#f5f5f586] cursor-pointer z-10 w-10 h-10 flex justify-center items-center left-0 -translate-x-0 text-2xl"
-          onClick={prevSlide}>
-          <FaArrowLeftLong />
-        </button>
-        <button
-          className="absolute top-1/2 -translate-y-1/2 bg-[#f5f5f586] cursor-pointer z-10 w-10 h-10 flex justify-center items-center right-0 -translate-x-0 text-2xl"
-          onClick={nextSlide}>
-          <FaArrowRight />
-        </button>
-        <ul>
-          {data.map((item, index) => (
-            <li
-              key={item.id}
-              className={`absolute inset-0 ${index === activeIndex ? 'opacity-100' : 'opacity-0'} transition-all duration-700 ease-in-out`}
-              data-active={index === activeIndex}>
-              <img src={item.image} alt={item.description} className="block w-full h-full object-cover" />
-            </li>
-          ))}
-        </ul>
+        <div className="w-full h-64 bg-[green] relative md:h-96 xl:h-[30rem]">
+          <button
+            className="absolute top-1/2 -translate-y-1/2 bg-[#f5f5f586] cursor-pointer z-10 w-10 h-10 flex justify-center items-center left-0 -translate-x-0 text-2xl"
+            onClick={prevSlide}
+          >
+            <FaArrowLeftLong />
+          </button>
+          <button
+            className="absolute top-1/2 -translate-y-1/2 bg-[#f5f5f586] cursor-pointer z-10 w-10 h-10 flex justify-center items-center right-0 -translate-x-0 text-2xl"
+            onClick={nextSlide}
+          >
+            <FaArrowRight />
+          </button>
+          <ul>
+            {data.map((item, index) => (
+              <li
+                key={item.id}
+                className={`absolute inset-0 ${
+                  index === activeIndex ? "opacity-100" : "opacity-0"
+                } transition-all duration-700 ease-in-out`}
+                data-active={index === activeIndex}
+              >
+                <img
+                  src={item.image}
+                  alt={item.description}
+                  className="block w-full h-full object-cover"
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+        <h2 className="my-5 text-center font-bold">{imgeDescription}</h2>
       </div>
-      <h2 className="my-5 text-center font-bold">{imgeDescription}</h2>
-      </div>
-    
     </main>
   );
 };

@@ -14,6 +14,8 @@ const Mars = () => {
     backgroundRepeat: "no-repeat",
   };
 
+  
+
   return (
     <>
       <section style={styles} className="closeSubMenu w-full h-screen relative" onMouseOver={handleMouseChange}>

@@ -14,6 +14,7 @@ import Pulsars from "./components/pages/Pulsars";
 
 import HistoryOfSpaceExploration from "./components/pages/HistoryOfSpaceExploration";
 import AdvancementsInRocketry from "./components/pages/AdvancementsInRocketry";
+import { MarsProvider } from "./components/pages/Mars/marsContext";
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
           path="/CosmicExplorations/SolarSystemExploration"
           element={<SolarSystemExploration />}
         />
-        <Route path="/CosmicExplorations/Mars" element={<Mars />} />
+       
+        <Route path="/CosmicExplorations/Mars" element={ <MarsProvider> <Mars /> </MarsProvider>} />
 
         <Route path="/CelestialWonders/BlackHoles" element={<BlackHoles />} />
 
