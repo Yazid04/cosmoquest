@@ -1,6 +1,6 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
-import { useGlobalContext } from "../context";
+import { useGlobalContext } from "../../context";
 
 const Hero = () => {
   const { GLOBAL_ANIMATION_DURATION, galleryPosition } = useGlobalContext();

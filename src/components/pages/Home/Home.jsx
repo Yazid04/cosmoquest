@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../shared/Navbar";
 import { useGlobalContext } from "../../context";
-import Hero from "../../shared/Hero"
+import Hero from "./Hero"
 /*import southernRingNebula from '../static/southernRingNebula.png';*/
 import cosmicCliffs from '../../static/cosmicCliffs.png'
 import EarthOverview from "./EarthOverview";
