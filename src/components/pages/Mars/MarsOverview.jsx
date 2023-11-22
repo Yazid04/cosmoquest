@@ -22,7 +22,7 @@ const MarsOverview = ({ result, onResult }) => {
     const refElement = overviewRef.current;
     const height = refElement.getBoundingClientRect().top;
     setOverviewSectionPosition(height);
-  }, []);
+  }, [setOverviewSectionPosition]);
 
   return (
     <main className="w-[80%] mx-auto mt-20 py-5 max-w-7xl" ref={overviewRef}>
