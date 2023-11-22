@@ -1,11 +1,10 @@
 import React from "react";
 import Navbar from "../../shared/Navbar";
 import { useGlobalContext } from "../../context";
-import Hero from "./Hero"
-/*import southernRingNebula from '../static/southernRingNebula.png';*/
-import cosmicCliffs from '../../static/cosmicCliffs.png'
+import Hero from "./Hero";
 import EarthOverview from "./EarthOverview";
-import { Footer } from "../../shared/Footer"; 
+import { Footer } from "../../shared/Footer";
+import cosmicCliffs from '../../static/cosmicCliffs.png';
 
 const Home = () => {
   const { handleMouseChange } = useGlobalContext();
@@ -14,12 +13,19 @@ const Home = () => {
     <>
       <section
         onMouseOver={handleMouseChange}
-        className="closeSubMenu overflow-hidden max-w-[3000px] text-center mx-auto h-screen relative bg-center bg-cover" style={{backgroundImage: `url(${cosmicCliffs})`}}>
+        className="closeSubMenu overflow-hidden max-w-[3000px] text-center mx-auto h-screen relative bg-center bg-cover"
+        style={{
+          backgroundImage: `url(${cosmicCliffs})`,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center", // Center content vertically
+        }}
+      >
         <Navbar />
-       <Hero />
+        <Hero />
       </section>
-     <EarthOverview />
-     <Footer />
+      <EarthOverview />
+      <Footer />
     </>
   );
 };
