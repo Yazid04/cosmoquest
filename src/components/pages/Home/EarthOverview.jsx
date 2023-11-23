@@ -1,16 +1,16 @@
 import React, { useEffect, useRef } from "react";
-import earthlayers1 from "../../static/earthlayers1.png";
-import earthlayers2 from "../../static/earthlayers2.png";
-import PaleBlueDot from "../../static/PaleBlueDot.png";
+import earthlayers1 from "./imgs/earthlayers1.png";
+import earthlayers2 from "./imgs/earthlayers2.png";
+import PaleBlueDot from "./imgs/PaleBlueDot.png";
 import { Link } from "react-router-dom";
-import earthrise from "../../static/earthrise.jpeg";
-import blueDisk from "../../static/BlueDisk.jpg";
-import apollo17EarthImg from "../../static/apollo17EarthImg.jpeg";
-import blueMarble from "../../static/blueMarble.jpg";
-import apollo4EarthImg from "../../static/apollo4EarthImg.jpeg";
-import GalileoEarthAndMoon from "../../static/GalileoEarthAndMoon.jpeg";
-import EarthCassiniPhoto from "../../static/EarthCassiniPhoto.jpeg";
-import CrescentEarth from "../../static/CrescentEarth.jpg";
+import earthrise from "./imgs/earthrise.jpeg";
+import blueDisk from "./imgs/BlueDisk.jpg";
+import apollo17EarthImg from "./imgs/apollo17EarthImg.jpeg";
+import blueMarble from "./imgs/blueMarble.jpg";
+import apollo4EarthImg from "./imgs/apollo4EarthImg.jpeg";
+import GalileoEarthAndMoon from "./imgs/GalileoEarthAndMoon.jpeg";
+import EarthCassiniPhoto from "./imgs/EarthCassiniPhoto.jpeg";
+import CrescentEarth from "./imgs/CrescentEarth.jpg";
 import { useGlobalContext } from "../../context";
 
 const EarthOverview = () => {
