@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import ErrorPage from "./components/shared/ErrorPage";
 import Home from "./components/pages/Home/Home";
 
-import WondrousWorlds from "./components/pages/WondrousWorlds";
+import WondrousWorlds from "./components/pages/Exoplanets/WondrousWorlds";
 import SolarSystemExploration from "./components/pages/SolarSystemExploration";
 import Mars from "./components/pages/Mars/Mars";
 
