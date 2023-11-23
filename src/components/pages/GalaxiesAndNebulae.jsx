@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../shared/Navbar";
 
-const Galaxies = () => {
+const GalaxiesAndNebulae = () => {
   return (
     <section className="bg-DarkSlateGray w-full h-screen">
       <Navbar />
@@ -10,4 +10,4 @@ const Galaxies = () => {
   );
 };
 
-export default Galaxies;
+export default GalaxiesAndNebulae;

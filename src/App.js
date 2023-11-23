@@ -9,7 +9,7 @@ import SolarSystemExploration from "./components/pages/SolarSystemExploration";
 import Mars from "./components/pages/Mars/Mars";
 
 import BlackHoles from "./components/pages/BlackHoles";
-import Galaxies from "./components/pages/Galaxies";
+import GalaxiesAndNebulae from "./components/pages/GalaxiesAndNebulae";
 import Pulsars from "./components/pages/Pulsars";
 
 import HistoryOfSpaceExploration from "./components/pages/HistoryOfSpaceExploration";
@@ -35,7 +35,7 @@ function App() {
 
         <Route path="/CelestialWonders/BlackHoles" element={<BlackHoles />} />
 
-        <Route path="/CelestialWonders/Galaxies" element={<Galaxies />} />
+        <Route path="/CelestialWonders/GalaxiesAndNebulae" element={<GalaxiesAndNebulae />} />
         <Route path="/CelestialWonders/Pulsars" element={<Pulsars />} />
 
         <Route

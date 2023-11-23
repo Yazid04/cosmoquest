@@ -34,9 +34,9 @@ export const data = [
           href: '/CelestialWonders/BlackHoles'
         },
         {
-          name: "Galaxies",
+          name: "Galaxies and Nebulae",
           id: 202,
-          href: '/CelestialWonders/Galaxies'
+          href: '/CelestialWonders/GalaxiesAndNebulae'
         },
         {
           name: "Pulsars",
