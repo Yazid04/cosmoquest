@@ -32,7 +32,7 @@ const GasGiants = () => {
       <div className="mb-14">
         <h2 className="text-3xl my-3 font-bold">1) Kepler-7b</h2>
         <img
-          className="w-full h-full object-cover mb-5"
+          className="w-full h-full object-cover mb-5 lg:max-w-3xl lg:h-[30rem]"
           src={kepler7b}
           alt="Super-Earth Exoplanet TOI1452b"
         />
@@ -55,7 +55,7 @@ const GasGiants = () => {
       <div className="mb-14">
         <h2 className="text-3xl my-3 font-bold">2) KELT-9b</h2>
         <img
-          className="w-full h-full object-cover mb-5"
+          className="w-full h-full object-cover mb-5 lg:max-w-3xl lg:h-[30rem]"
           src={KELT9b}
           alt="Super-Earth Exoplanet TOI1452b"
         />
