@@ -5,7 +5,7 @@ import Gliese667Cc from './imgs/Gliese667Cc.jpeg'
 
 const SuperEarths = () => {
   return (
-    <main className="text-start h-min w-[80%] mx-auto mt-20 py-5 max-w-7xl">
+    <main className="text-start h-min w-[80%] mx-auto mt-20 max-w-7xl">
       <div className="mb-14">
         <h2 className="text-3xl my-3 font-bold">Super Earths</h2>
         <div className="mb-5 text-DarkSlateGray lg:max-w-3xl lg:h-[30rem]">
