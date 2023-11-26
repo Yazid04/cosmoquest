@@ -30,7 +30,7 @@ const Neptunians = () => {
       <div className="mb-14">
         <h2 className="text-3xl my-3 font-bold">1) HAT-P-26b</h2>
         <img
-          className="w-full h-full object-cover mb-5"
+          className="w-full h-full object-cover mb-5 lg:max-w-3xl lg:h-[30rem]"
           src={HATP26b}
           alt="Super-Earth Exoplanet TOI1452b"
         />
@@ -45,7 +45,7 @@ const Neptunians = () => {
       <div className="mb-14">
         <h2 className="text-3xl my-3 font-bold">2) GJ 436 b</h2>
         <img
-          className="w-full h-full object-cover mb-5"
+          className="w-full h-full object-cover mb-5 lg:max-w-3xl lg:h-[30rem]"
           src={GJ436}
           alt="Super-Earth Exoplanet TOI1452b"
         />
