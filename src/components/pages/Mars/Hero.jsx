@@ -6,12 +6,12 @@ import { useGlobalContext } from "../../context";
 
 const Hero = () => {
    const {GLOBAL_ANIMATION_DURATION} = useGlobalContext();
-  const {overviewSectionPosition} = usePagesContext()
+  const {MARS_INRO_POSITION} = usePagesContext()
 
   
   const scrollToTarget = () => {
     window.scrollTo({
-      top: overviewSectionPosition,
+      top: MARS_INRO_POSITION,
       behavior: "smooth",
     });
   };

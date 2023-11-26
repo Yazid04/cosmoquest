@@ -3,17 +3,16 @@ import { createContext, useContext, useState } from "react";
 const pagesContext = createContext();
 
 const PagesProvider = ({ children }) => {
-  const [EXOPLANET_INTRO_POSITION, setEXOPLANET_INTRO_POSITION] = useState(null);
-  const [overviewSectionPosition, setOverviewSectionPosition] = useState(null);
-
+  const [EXOPLANETS_INTRO_POSITION, SET_EXOPLANETS_INTRO_POSITION] = useState(null);
+  const [MARS_INRO_POSITION, SET_MARS_INRO_POSITION] = useState(null);
 
   return (
     <pagesContext.Provider
       value={{
-        EXOPLANET_INTRO_POSITION,
-        setEXOPLANET_INTRO_POSITION,
-        overviewSectionPosition,
-        setOverviewSectionPosition
+        EXOPLANETS_INTRO_POSITION,
+        SET_EXOPLANETS_INTRO_POSITION,
+        MARS_INRO_POSITION,
+        SET_MARS_INRO_POSITION,
       }}
     >
       {children}

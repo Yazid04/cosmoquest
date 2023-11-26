@@ -5,11 +5,11 @@ import { useSpring, animated } from "react-spring";
 
 const Hero = () => {
   const { handleMouseChange, GLOBAL_ANIMATION_DURATION } = useGlobalContext();
-  const { EXOPLANET_INTRO_POSITION } = usePagesContext();
+  const { EXOPLANETS_INTRO_POSITION } = usePagesContext();
   
   const scrollToTarget = () => {
     window.scrollTo({
-      top: EXOPLANET_INTRO_POSITION,
+      top: EXOPLANETS_INTRO_POSITION,
       behavior: "smooth",
     });
   };

@@ -1,16 +1,15 @@
 import React, {useRef, useEffect} from "react";
 import { usePagesContext } from "../pagesContext";
-//import { Link } from "react-router-dom";
 
 const Overview = () => {
-const {setEXOPLANET_INTRO_POSITION} = usePagesContext();
+const {SET_EXOPLANETS_INTRO_POSITION} = usePagesContext();
 
   const overviewRef = useRef();
   useEffect(() => {
     const refElement = overviewRef.current;
     const height = refElement.getBoundingClientRect().top;
-    setEXOPLANET_INTRO_POSITION(height);
-  }, [setEXOPLANET_INTRO_POSITION]);
+    SET_EXOPLANETS_INTRO_POSITION(height);
+  }, [SET_EXOPLANETS_INTRO_POSITION]);
 
 
   return (

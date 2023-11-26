@@ -8,7 +8,7 @@ import { usePagesContext } from "../pagesContext";
 
 
 const MarsOverview = () => {
-  const { setOverviewSectionPosition } = usePagesContext();
+  const { SET_MARS_INRO_POSITION } = usePagesContext();
   const [activeIndex, setActiveIndex] = useState(0);
   const imgeDescription = data[activeIndex].description;
   const nextSlide = () => {
@@ -22,8 +22,8 @@ const MarsOverview = () => {
   useEffect(() => {
     const refElement = overviewRef.current;
     const height = refElement.getBoundingClientRect().top;
-    setOverviewSectionPosition(height);
-  }, [setOverviewSectionPosition]);
+    SET_MARS_INRO_POSITION(height);
+  }, [SET_MARS_INRO_POSITION]);
 
   return (
     <main className="w-[80%] mx-auto mt-20 py-5 max-w-7xl" ref={overviewRef}>
