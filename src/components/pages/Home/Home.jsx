@@ -18,7 +18,7 @@ const Home = () => {
           backgroundImage: `url(${cosmicCliffs})`,
           display: "flex",
           flexDirection: "column",
-          alignItems: "center", // Center content vertically
+          alignItems: "center",
         }}
       >
         <Navbar />
