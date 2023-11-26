@@ -5,7 +5,7 @@ const Overview = () => {
   return (
     <main className="closeSubMenu w-[80%] mx-auto mt-20 py-5 max-w-7xl">
       <div className="mb-14">
-        <h2 className="text-4xl mb-5 text-DarkSlateGray">
+        <h2 className="text-4xl mb-5 font-bold text-DarkSlateGray">
           What are Exoplanets?{" "}
         </h2>
         <p className="leading-loose font-Playpen">
@@ -21,7 +21,7 @@ const Overview = () => {
         </p>
       </div>
       <div>
-        <h2 className="text-4xl mb-5 text-DarkSlateGray">
+        <h2 className="text-4xl mb-5 font-bold text-DarkSlateGray">
           How are Exoplanets discovered?{" "}
         </h2>
         <p className="leading-loose font-Playpen">

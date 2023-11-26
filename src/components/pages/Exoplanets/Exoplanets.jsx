@@ -30,10 +30,10 @@ const Exoplanets = () => {
       <div className="w-full grid place-content-center mb-5 h-40 bg-DarkSlateGray">
         <h1 className="text-Silver text-4xl font-Playpen">Alien Worlds</h1>
       </div>
-      <div className="w-full flex flex-wrap">
-      <h2 className="font-bold text-2xl w-[80%] mx-auto my-10 text-center">
-            Exoplanets can categorized into 3 main classes
-      </h2>
+      <div className="w-full flex flex-wrap 2xl:flex-col 2xl:w-[85%] text-center mx-auto">
+        <h2 className="font-bold text-2xl w-[80%] mx-auto my-10 text-center">
+          Exoplanets can be categorized into 3 main classes
+        </h2>
         <div className="w-full flex h-min flex-col justify-evenly items-center gap-5 md:flex-row px-10">
           {typesOfExoplanets.map((type) => {
             const { id, name, img } = type;

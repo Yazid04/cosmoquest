@@ -5,11 +5,11 @@ import KELT9b from "./imgs/KELT9b.jpeg";
 
 const GasGiants = () => {
   return (
-    <main className="text-start h-min my-10 w-[80%] mx-auto mt-20 py-5 max-w-7xl">
+    <main className="text-start h-min w-[80%] mx-auto mt-20 py-5 max-w-7xl">
    
       <div className="mb-14">
         <h2 className="text-3xl my-3 font-bold">Gas giants</h2>
-        <div className="mb-5 text-DarkSlateGray">
+        <div className="mb-5 text-DarkSlateGray lg:max-w-3xl lg:h-[30rem]">
           <img
             className="w-full h-full object-cover"
             src={GasGiantIllustration}
@@ -32,7 +32,7 @@ const GasGiants = () => {
       <div className="mb-14">
         <h2 className="text-3xl my-3 font-bold">1) Kepler-7b</h2>
         <img
-          className="w-full h-full object-cover mb-5 lg:max-w-3xl lg:h-[30rem]"
+          className="w-full h-full object-cover mb-5 lg:max-w-xl lg:h-[23rem]"
           src={kepler7b}
           alt="Super-Earth Exoplanet TOI1452b"
         />
@@ -55,7 +55,7 @@ const GasGiants = () => {
       <div className="mb-14">
         <h2 className="text-3xl my-3 font-bold">2) KELT-9b</h2>
         <img
-          className="w-full h-full object-cover mb-5 lg:max-w-3xl lg:h-[30rem]"
+          className="w-full h-full object-cover mb-5 lg:max-w-xl lg:h-[23rem]"
           src={KELT9b}
           alt="Super-Earth Exoplanet TOI1452b"
         />

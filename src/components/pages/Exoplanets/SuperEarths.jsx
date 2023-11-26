@@ -5,10 +5,10 @@ import Gliese667Cc from './imgs/Gliese667Cc.jpeg'
 
 const SuperEarths = () => {
   return (
-    <main className="text-start h-min my-10 w-[80%] mx-auto mt-20 py-5 max-w-7xl">
+    <main className="text-start h-min w-[80%] mx-auto mt-20 py-5 max-w-7xl">
       <div className="mb-14">
         <h2 className="text-3xl my-3 font-bold">Super Earths</h2>
-        <div className="mb-5 text-DarkSlateGray">
+        <div className="mb-5 text-DarkSlateGray lg:max-w-3xl lg:h-[30rem]">
           <img
             className="w-full h-full object-cover"
             src={SuperEarth}
@@ -28,7 +28,7 @@ const SuperEarths = () => {
       <div className="mb-14">
         <h2 className="text-3xl my-3 font-bold">1) TOI-1452b</h2>
         <img
-          className="w-full h-full object-cover mb-5 lg:max-w-3xl lg:h-[30rem]"
+          className="w-full h-full object-cover mb-5 lg:max-w-xl lg:h-[23rem]"
           src={TOI1452b}
           alt="Super-Earth Exoplanet TOI1452b"
         />
@@ -57,7 +57,7 @@ const SuperEarths = () => {
       <div className="mb-14">
         <h2 className="text-3xl my-3 font-bold">2) Gliese 667 Cc</h2>
         <img
-          className="w-full h-full object-cover mb-5 lg:max-w-3xl lg:h-[30rem]"
+          className="w-full h-full object-cover mb-5 lg:max-w-xl lg:h-[23rem]"
           src={Gliese667Cc}
           alt="Super-Earth Exoplanet TOI1452b"
         />
