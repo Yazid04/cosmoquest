@@ -7,7 +7,6 @@ const AppProvider = ({ children }) => {
   const [title, setTitle] = useState("");
   const [location, setLocation] = useState({});
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
-  const [galleryPosition, setGalleryPosition] = useState(null);
   const GLOBAL_ANIMATION_DURATION = 1000;
 
   function closeSubmenu() {
@@ -53,8 +52,7 @@ const AppProvider = ({ children }) => {
         closeSideBar,
         isSideBarOpen,
         GLOBAL_ANIMATION_DURATION,
-        galleryPosition,
-        setGalleryPosition,
+       
       }}
     >
       {children}

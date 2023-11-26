@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
 import MarsComparisonCatalog from "./photos/MarsComparisonCatalog.png";
-import { useMarsContext } from "./marsContext";
+import { usePagesContext } from "../pagesContext";
 
-const MarsOverview = ({ result, onResult }) => {
-  const { setOverviewSectionPosition } = useMarsContext();
+
+const MarsOverview = () => {
+  const { setOverviewSectionPosition } = usePagesContext();
   const [activeIndex, setActiveIndex] = useState(0);
   const imgeDescription = data[activeIndex].description;
   const nextSlide = () => {

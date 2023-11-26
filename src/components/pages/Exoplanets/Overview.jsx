@@ -1,9 +1,20 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
+import { usePagesContext } from "../pagesContext";
 //import { Link } from "react-router-dom";
 
 const Overview = () => {
+const {setEXOPLANET_INTRO_POSITION} = usePagesContext();
+
+  const overviewRef = useRef();
+  useEffect(() => {
+    const refElement = overviewRef.current;
+    const height = refElement.getBoundingClientRect().top;
+    setEXOPLANET_INTRO_POSITION(height);
+  }, [setEXOPLANET_INTRO_POSITION]);
+
+
   return (
-    <main className="closeSubMenu w-[80%] mx-auto mt-20 py-5 max-w-7xl">
+    <main ref={overviewRef} className="closeSubMenu w-[80%] mx-auto mt-20 py-5 max-w-7xl">
       <div className="mb-14">
         <h2 className="text-4xl mb-5 font-bold text-DarkSlateGray">
           What are Exoplanets?{" "}

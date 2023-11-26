@@ -1,12 +1,13 @@
 import React from "react";
-import { useMarsContext } from "./marsContext";
+import { usePagesContext } from "../pagesContext";
 import { useSpring, animated } from "react-spring";
 import { useGlobalContext } from "../../context";
 
 
 const Hero = () => {
    const {GLOBAL_ANIMATION_DURATION} = useGlobalContext();
-  const {overviewSectionPosition} = useMarsContext()
+  const {overviewSectionPosition} = usePagesContext()
+
   
   const scrollToTarget = () => {
     window.scrollTo({
