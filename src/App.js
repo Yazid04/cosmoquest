@@ -5,7 +5,7 @@ import ErrorPage from "./components/shared/ErrorPage";
 import Home from "./components/pages/Home/Home";
 
 import WondrousWorlds from "./components/pages/Exoplanets/WondrousWorlds";
-import SolarSystemExploration from "./components/pages/SolarSystemExploration";
+import SolarSystemExploration from "./components/pages/solarSystem/SolarSystemExploration";
 import Mars from "./components/pages/Mars/Mars";
 
 import BlackHoles from "./components/pages/BlackHoles";
