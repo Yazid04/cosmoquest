@@ -28,7 +28,7 @@ const SuperEarths = () => {
       <div className="mb-14">
         <h2 className="text-3xl my-3 font-bold">1) TOI-1452b</h2>
         <img
-          className="w-full h-full object-cover mb-5"
+          className="w-full h-full object-cover mb-5 lg:max-w-3xl lg:h-[30rem]"
           src={TOI1452b}
           alt="Super-Earth Exoplanet TOI1452b"
         />
@@ -57,7 +57,7 @@ const SuperEarths = () => {
       <div className="mb-14">
         <h2 className="text-3xl my-3 font-bold">1) Gliese 667 Cc</h2>
         <img
-          className="w-full h-full object-cover mb-5"
+          className="w-full h-full object-cover mb-5 lg:max-w-3xl lg:h-[30rem]"
           src={Gliese667Cc}
           alt="Super-Earth Exoplanet TOI1452b"
         />
