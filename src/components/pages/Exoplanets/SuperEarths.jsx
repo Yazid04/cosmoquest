@@ -55,7 +55,7 @@ const SuperEarths = () => {
       </div>
 
       <div className="mb-14">
-        <h2 className="text-3xl my-3 font-bold">1) Gliese 667 Cc</h2>
+        <h2 className="text-3xl my-3 font-bold">2) Gliese 667 Cc</h2>
         <img
           className="w-full h-full object-cover mb-5 lg:max-w-3xl lg:h-[30rem]"
           src={Gliese667Cc}
