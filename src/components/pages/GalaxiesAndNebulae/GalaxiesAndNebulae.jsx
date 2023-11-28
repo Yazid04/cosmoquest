@@ -5,12 +5,12 @@ import { Footer } from "../../shared/Footer";
 import { useGlobalContext } from "../../context";
 import NebulaeOverview from './NebulaeOverview'
 import GalaxiesOverview from './GalaxiesOverview'
-//import southernRingNebula from '../../static/southernRingNebula.png'
+import southernRingNebula from '../../static/southernRingNebula.png'
 
 const GalaxiesAndNebulae = () => {
   const { handleMouseChange } = useGlobalContext();
   const backgroundStyles = {
-    backgroundImage: `url(${''})`,
+    backgroundImage: `url(${southernRingNebula})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
