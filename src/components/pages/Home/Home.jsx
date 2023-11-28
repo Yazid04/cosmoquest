@@ -6,6 +6,7 @@ import EarthOverview from "./EarthOverview";
 import { Footer } from "../../shared/Footer";
 import cosmicCliffs from '../../static/cosmicCliffs.png';
 
+
 const Home = () => {
   const { handleMouseChange } = useGlobalContext();
 

@@ -6,6 +6,7 @@ const PagesProvider = ({ children }) => {
   const [EXOPLANETS_INTRO_POSITION, SET_EXOPLANETS_INTRO_POSITION] = useState(null);
   const [MARS_INRO_POSITION, SET_MARS_INRO_POSITION] = useState(null);
   const [SOLAR_SYSTEM_INRO_POSITION, SET_SOLAR_SYSTEM_INRO_POSITION] = useState(null);
+  const [GALAXIES_INTRO_POSITION, SET_GALAXIES_INTRO_POSITION] = useState(null)
 
   return (
     <pagesContext.Provider
@@ -15,7 +16,9 @@ const PagesProvider = ({ children }) => {
         MARS_INRO_POSITION,
         SET_MARS_INRO_POSITION,
         SOLAR_SYSTEM_INRO_POSITION,
-        SET_SOLAR_SYSTEM_INRO_POSITION
+        SET_SOLAR_SYSTEM_INRO_POSITION,
+        GALAXIES_INTRO_POSITION,
+        SET_GALAXIES_INTRO_POSITION
       }}
     >
       {children}

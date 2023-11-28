@@ -5,7 +5,7 @@ import { Footer } from "../../shared/Footer";
 import { useGlobalContext } from "../../context";
 import NebulaeOverview from './NebulaeOverview'
 import GalaxiesOverview from './GalaxiesOverview'
-import southernRingNebula from '../../static/southernRingNebula.png'
+import southernRingNebula from './imgs/southernRingNebula.png'
 
 const GalaxiesAndNebulae = () => {
   const { handleMouseChange } = useGlobalContext();
