@@ -8,8 +8,8 @@ import WondrousWorlds from "./components/pages/Exoplanets/WondrousWorlds";
 import SolarSystemExploration from "./components/pages/solarSystem/SolarSystemExploration";
 import Mars from "./components/pages/Mars/Mars";
 
-import BlackHoles from "./components/pages/BlackHoles";
-import GalaxiesAndNebulae from "./components/pages/GalaxiesAndNebulae";
+import BlackHoles from "./components/pages/BlackHoles/BlackHoles";
+import GalaxiesAndNebulae from "./components/pages/GalaxiesAndNebulae/GalaxiesAndNebulae";
 import Pulsars from "./components/pages/Pulsars";
 
 import HistoryOfSpaceExploration from "./components/pages/HistoryOfSpaceExploration";
