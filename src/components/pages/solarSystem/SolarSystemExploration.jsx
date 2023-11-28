@@ -4,12 +4,12 @@ import { useGlobalContext } from "../../context";
 import Hero from "./Hero";
 import SSOverview from "./SSOverview";
 import { Footer } from "../../shared/Footer";
-//import marsBg from './photos/marsBg.jpeg'
+import SolarSystemHeroBg from './imgs/SolarSystemHeroBg.jpeg'
 
 const Mars = () => {
   const { handleMouseChange } = useGlobalContext();
   const backgroundStyles = {
-    backgroundImage: `url(https://cdn.britannica.com/01/81401-050-8EB87030/planets-solar-system-Pluto-montage-images-Sun.jpg)`,
+    backgroundImage: `url(${SolarSystemHeroBg})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
