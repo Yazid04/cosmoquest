@@ -2,7 +2,9 @@ import React, { useEffect, useRef } from "react";
 import { usePagesContext } from "../pagesContext";
 import andromeda2 from "./imgs/andromeda2.jpeg";
 //import nebulaImg from "../../static/nebulaImg.jpeg";
-
+import NGC1300Galaxy from './imgs/NGC1300Galaxy.jpeg'
+import NGC4150EllipticalGalaxy from './imgs/NGC4150EllipticalGalaxy.jpeg'
+import HolmbergIIIrregularGalaxy from './imgs/HolmbergIIIrregularGalaxy.jpeg'
 
 const GalaxiesOverview = () => {
   const { SET_GALAXIES_INTRO_POSITION } = usePagesContext();
@@ -20,10 +22,10 @@ const GalaxiesOverview = () => {
       className="closeSubMenu w-[80%] mx-auto mt-20 py-5 max-w-7xl"
     >
       <div className="mb-14">
-        <h2 className="text-6xl mb-5 text-DarkSlateGray font-bold">
+        <h2 className="text-5xl mb-5 text-DarkSlateGray font-bold">
           1. Galaxies:
         </h2>
-        <div className="mb-5 text-DarkSlateGray lg:max-w-3xl lg:h-[18rem]">
+        <div className="mb-5 text-DarkSlateGray lg:max-w-3xl lg:h-[35rem]">
           <img
             className="w-full h-full object-cover"
             src={andromeda2}
@@ -53,10 +55,10 @@ const GalaxiesOverview = () => {
         <h2 className="text-4xl mb-5 text-DarkSlateGray font-bold">
           I Spiral galaxies:
         </h2>
-        <div className="mb-5 text-DarkSlateGray lg:max-w-3xl lg:h-[18rem]">
+        <div className="mb-5 text-DarkSlateGray lg:max-w-2xl lg:h-[28rem]">
           <img
             className="w-full h-full object-cover"
-            src={andromeda2}
+            src={NGC1300Galaxy}
             alt="Introduction to the Solar System"
           />
         </div>
@@ -76,10 +78,10 @@ const GalaxiesOverview = () => {
         <h2 className="text-4xl mb-5 text-DarkSlateGray font-bold">
           II elliptical galaxies:
         </h2>
-        <div className="mb-5 text-DarkSlateGray lg:max-w-3xl lg:h-[18rem]">
+        <div className="mb-5 text-DarkSlateGray lg:max-w-2xl lg:h-[28rem]">
           <img
             className="w-full h-full object-cover"
-            src={andromeda2}
+            src={NGC4150EllipticalGalaxy}
             alt="Introduction to the Solar System"
           />
         </div>
@@ -99,10 +101,10 @@ const GalaxiesOverview = () => {
         <h2 className="text-4xl mb-5 text-DarkSlateGray font-bold">
           III Irregular galaxies:
         </h2>
-        <div className="mb-5 text-DarkSlateGray lg:max-w-3xl lg:h-[18rem]">
+        <div className="mb-5 text-DarkSlateGray lg:max-w-2xl lg:h-[28rem]">
           <img
             className="w-full h-full object-cover"
-            src={andromeda2}
+            src={HolmbergIIIrregularGalaxy}
             alt="Introduction to the Solar System"
           />
         </div>
