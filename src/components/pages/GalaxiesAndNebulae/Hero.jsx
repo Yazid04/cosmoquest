@@ -5,11 +5,11 @@ import { useGlobalContext } from "../../context";
 
 const Hero = () => {
   const { GLOBAL_ANIMATION_DURATION } = useGlobalContext();
-  const { SOLAR_SYSTEM_INRO_POSITION } = usePagesContext();
+  const { GALAXIES_INTRO_POSITION } = usePagesContext();
 
   const scrollToTarget = () => {
     window.scrollTo({
-      top: SOLAR_SYSTEM_INRO_POSITION,
+      top: GALAXIES_INTRO_POSITION,
       behavior: "smooth",
     });
   };
