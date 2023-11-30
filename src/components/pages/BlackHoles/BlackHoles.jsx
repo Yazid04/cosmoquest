@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../../shared/Navbar";
-import Hero from "./Hero";
 import BlackHolesOverview from './BlackHolesOverview'
 import { Footer } from "../../shared/Footer";
 import { useGlobalContext } from "../../context";
@@ -8,7 +7,7 @@ import { useGlobalContext } from "../../context";
 const BlackHoles = () => {
   const { handleMouseChange } = useGlobalContext();
   const backgroundStyles = {
-    backgroundImage: `url(${''})`,
+    backgroundColor: `black`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -27,7 +26,6 @@ const BlackHoles = () => {
     onMouseOver={handleMouseChange}
     >
       <Navbar />
-      <Hero  />
     </section>
     <BlackHolesOverview />
     <Footer />
