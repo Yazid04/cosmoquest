@@ -1,6 +1,6 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import ErrorPage from "./components/shared/ErrorPage";
 import Home from "./components/pages/Home/Home";
 
@@ -17,6 +17,18 @@ import AdvancementsInRocketry from "./components/pages/AdvancementsInRocketry";
 
 
 function App() {
+  const location = useLocation();
+
+
+  useEffect(() => {
+    // Check if the current route is "/CelestialWonders/BlackHoles"
+    const isBlackHolesPage = location.pathname === '/CelestialWonders/BlackHoles';
+
+    // Apply inline styles to the body element
+    document.body.style.backgroundColor = isBlackHolesPage ? 'black' : '#FFFFFF';
+  }, [location.pathname]); // Re-run the effect when the pathname changes
+
+
   return (
     <>
       <Routes>
