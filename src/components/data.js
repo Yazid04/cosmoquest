@@ -38,11 +38,6 @@ export const data = [
           id: 202,
           href: '/CelestialWonders/GalaxiesAndNebulae'
         },
-        {
-          name: "Pulsars",
-          id: 203,
-          href: '/CelestialWonders/Pulsars'
-        },
       ],
   },
   {
@@ -60,6 +55,11 @@ export const data = [
           name: "Advancements in Rocketry",
           id: 302,
           href: '/SpaceHeritageAndInnovation/AdvancementsInRocketry'
+        },
+        {
+          name: "International Space Station",
+          id: 303,
+          href: '/SpaceHeritageAndInnovation/InternationalSpaceStation'
         },
       ],
   },

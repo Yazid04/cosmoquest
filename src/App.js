@@ -10,11 +10,10 @@ import Mars from "./components/pages/Mars/Mars";
 
 import BlackHoles from "./components/pages/BlackHoles/BlackHoles";
 import GalaxiesAndNebulae from "./components/pages/GalaxiesAndNebulae/GalaxiesAndNebulae";
-import Pulsars from "./components/pages/Pulsars";
 
 import HistoryOfSpaceExploration from "./components/pages/HistoryOfSpaceExploration";
 import AdvancementsInRocketry from "./components/pages/AdvancementsInRocketry";
-
+import InternationalSpaceStation from './components/pages/ISS/InternationalSpaceStation'
 
 function App() {
   const location = useLocation();
@@ -48,7 +47,6 @@ function App() {
         <Route path="/CelestialWonders/BlackHoles" element={<BlackHoles />} />
 
         <Route path="/CelestialWonders/GalaxiesAndNebulae" element={<GalaxiesAndNebulae />} />
-        <Route path="/CelestialWonders/Pulsars" element={<Pulsars />} />
 
         <Route
           path="/spaceHeritageAndInnovation/HistoryOfSpaceExploration"
@@ -57,6 +55,10 @@ function App() {
         <Route
           path="/spaceHeritageAndInnovation/AdvancementsInRocketry"
           element={<AdvancementsInRocketry />}
+        />
+        <Route
+          path="/spaceHeritageAndInnovation/InternationalSpaceStation"
+          element={<InternationalSpaceStation />}
         />
 
         <Route path="*" element={<ErrorPage />} />
