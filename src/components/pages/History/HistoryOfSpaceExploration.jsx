@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../shared/Navbar";
+import Navbar from "../../shared/Navbar";
 
 const HistoryOfSpaceExploration = () => {
   return (

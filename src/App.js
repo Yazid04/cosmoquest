@@ -11,7 +11,7 @@ import Mars from "./components/pages/Mars/Mars";
 import BlackHoles from "./components/pages/BlackHoles/BlackHoles";
 import GalaxiesAndNebulae from "./components/pages/GalaxiesAndNebulae/GalaxiesAndNebulae";
 
-import HistoryOfSpaceExploration from "./components/pages/HistoryOfSpaceExploration";
+import HistoryOfSpaceExploration from "./components/pages/History/HistoryOfSpaceExploration";
 import AdvancementsInRocketry from "./components/pages/rocketryAdvancements/AdvancementsInRocketry";
 import InternationalSpaceStation from './components/pages/ISS/InternationalSpaceStation'
 
