@@ -39,7 +39,7 @@ const ISSOverview = () => {
         <h2 className="text-4xl mb-5 text-DarkSlateGray font-bold">
           2. International Collaboration:
         </h2>
-        <p className="leading-relaxed">
+        <p className="leading-loose font-Playpen">
           One of the most remarkable aspects of the International Space Station
           (ISS) is the unprecedented level of international collaboration
           involved in its creation and operation. The ISS is a joint project
@@ -60,7 +60,7 @@ const ISSOverview = () => {
         <h2 className="text-4xl mb-5 text-DarkSlateGray font-bold">
           3. Research and Experiments:
         </h2>
-        <p className="leading-relaxed">
+        <p className="leading-loose font-Playpen">
           The International Space Station (ISS) stands as a beacon of scientific
           exploration in the microgravity environment of space. Its unique
           conditions enable a wide range of research and experiments across
