@@ -4,6 +4,7 @@ import { useGlobalContext } from "../../context";
 import Hero from "./Hero";
 //import SSOverview from "./SSOverview";
 import { Footer } from "../../shared/Footer";
+import ISSOverview from "./ISSOverview";
 
 const InternationalSpaceStation = () => {
   const { handleMouseChange } = useGlobalContext();
@@ -30,7 +31,7 @@ const InternationalSpaceStation = () => {
         <Navbar />
         <Hero />
       </section>
-      {/*<SSOverview />*/} 
+      <ISSOverview /> 
       <Footer />
     </>
   );
