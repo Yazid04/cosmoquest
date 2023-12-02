@@ -1,18 +1,9 @@
 import React from "react";
-import { usePagesContext } from "../pagesContext";
 import { useSpring, animated } from "react-spring";
 import { useGlobalContext } from "../../context";
 
 const Hero = () => {
   const { GLOBAL_ANIMATION_DURATION } = useGlobalContext();
-  const { SOLAR_SYSTEM_INRO_POSITION } = usePagesContext();
-
-  const scrollToTarget = () => {
-    window.scrollTo({
-      top: SOLAR_SYSTEM_INRO_POSITION,
-      behavior: "smooth",
-    });
-  };
 
   const fadeIn = useSpring({
     opacity: 1,
