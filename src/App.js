@@ -24,7 +24,7 @@ function App() {
     const isBlackHolesPage = location.pathname === '/CelestialWonders/BlackHoles';
 
     // Apply inline styles to the body element
-    document.body.style.backgroundColor = isBlackHolesPage ? 'black' : '#FFFFFF';
+    document.body.style.backgroundColor = isBlackHolesPage ? 'black' : '#D9D9D9';
   }, [location.pathname]); // Re-run the effect when the pathname changes
 
 
