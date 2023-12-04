@@ -5,12 +5,13 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
 import MarsComparisonCatalog from "./photos/MarsComparisonCatalog.png";
 import { usePagesContext } from "../pagesContext";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 
 const MarsOverview = () => {
   const { SET_MARS_INRO_POSITION } = usePagesContext();
   const [activeIndex, setActiveIndex] = useState(0);
-  const imgeDescription = data[activeIndex].description;
+  const imageDescription = data[activeIndex].description;
   const nextSlide = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % data.length);
   };
@@ -120,10 +121,11 @@ const MarsOverview = () => {
         </p>
       </div>
       <div className="mb-14">
-        <h2 className="mb-7 font-bold">
-          NASA’s Curiosity Mars rover captured this 360-degree panorama while
+        <a href="https://mars.nasa.gov/resources/27696/curiosity-views-gediz-vallis-ridge/?site=msl"
+         className="mb-7 cursor-pointer font-bold">
+          Credit: NASA’s Curiosity Mars rover captured this 360-degree panorama while
           parked below Gediz Vallis Ridge (the hill-like slope at right).
-        </h2>
+        </a>
         <iframe
           src="https://mars.nasa.gov/embed/27696/"
           title="NASA’s Curiosity Mars rover captured this 360-degree panorama while parked below Gediz Vallis Ridge (the hill-like slope at right)."
@@ -192,7 +194,10 @@ const MarsOverview = () => {
             ))}
           </ul>
         </div>
-        <h2 className="my-5 text-center font-bold">{imgeDescription}</h2>
+        <div className="w-full flex justify-center items-center gap-x-3 text-center py-3">
+        <a href={data[activeIndex].creditLink} className="text-center font-bold">{imageDescription}</a>
+        <FaLongArrowAltRight />
+        </div>
       </div>
     </main>
   );
