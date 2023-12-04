@@ -52,11 +52,11 @@ const Nebulae = [
   image: orionNubula,
  },
  {
-  id: 8,
+  id: 9,
   image: nebulaNGC6302,
  },
  {
-  id: 8,
+  id: 10,
   image: HorseheadNebula,
  },
 ]
