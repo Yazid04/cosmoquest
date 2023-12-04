@@ -154,21 +154,23 @@ const EarthOverview = () => {
             <div className="pb-10 w-full h-full">
               <img
                 src={earthlayers2}
-                className="w-[27rem] h-[18rem]"
+                className="w-[27rem] h-[18rem] mb-2"
                 alt="Full disk Earth"
               />
+              <a className="cursor-pointer" href="https://byjus.com/physics/layers-of-the-earth/">Credit: byjus.com</a>
             </div>
 
             <div className="pb-10 w-full h-full">
               <img
                 src={earthlayers1}
-                className="w-[27rem] h-[18rem]"
+                className="w-[27rem] h-[18rem] mb-2"
                 alt="Full disk Earth"
               />
+            <a className="cursor-pointer" href="https://www.snexplores.org/article/explainer-earth-layer-layer">Credit: snexplores.org</a>
             </div>
           </div>
 
-          <p className="pb-10">
+          <p className="pb-10 font-Playpen leading-loose">
             The crust, where we reside, is approximately 30 km (18.6 miles)
             thick. Earth's crust consists of{" "}
             <Link
@@ -200,7 +202,7 @@ const EarthOverview = () => {
             the inner core.
           </p>
 
-          <p className="pb-10">
+          <p className="pb-10 font-Playpen leading-loose">
             Earth is the third planet from the sun, situated in the{" "}
             <Link
               className="font-bold"
@@ -212,7 +214,7 @@ const EarthOverview = () => {
             water to remain a liquid and not boil.
           </p>
 
-          <div className="pb-10">
+          <div className="pb-10 font-Playpen leading-loose">
             <li>Mass: {"5.972 × 10^24"} kg </li>
             <li>Radius: 6,371 km </li>
             <li>Gravity: 9.807 m/s² </li>
@@ -220,7 +222,7 @@ const EarthOverview = () => {
             <li>Land area: 148.9 million km² </li>
           </div>
 
-          <p className="pb-10">
+          <p className="pb-10 font-Playpen leading-loose">
             To the best of{" "}
             <Link
               className="font-bold"
@@ -238,7 +240,7 @@ const EarthOverview = () => {
             old.
           </p>
 
-          <p className="pb-10">
+          <p className="pb-10 font-Playpen leading-loose">
             Perhaps, there is nothing better to finish this overview of our home
             than the famous excerpt from Carl Sagan's book Pale Blue Dot.
           </p>
@@ -252,7 +254,7 @@ const EarthOverview = () => {
           </div>
 
           <div className="p-10 rounded-md shadow-md pb-10 bg-Silver">
-            <p className="pb-5 font-Playpen">
+            <p className="pb-5 font-Playpen leading-loose">
               "Look again at that dot. That's here. That's home. That's us. On
               it everyone you love, everyone you know, everyone you ever heard
               of, every human being who ever was, lived out their lives. The
@@ -266,7 +268,7 @@ const EarthOverview = () => {
               history of our species lived there--on a mote of dust suspended in
               a sunbeam.
             </p>
-            <p className="pb-5 font-Playpen">
+            <p className="pb-5 font-Playpen leading-loose">
               The Earth is a very small stage in a vast cosmic arena. Think of
               the rivers of blood spilled by all those generals and emperors so
               that, in glory and triumph, they could become the momentary
@@ -276,7 +278,7 @@ const EarthOverview = () => {
               frequent their misunderstandings, how eager they are to kill one
               another, how fervent their hatreds.
             </p>
-            <p className="pb-5 font-Playpen">
+            <p className="pb-5 font-Playpen leading-loose">
               Our posturings, our imagined self-importance, the delusion that we
               have some privileged position in the Universe, are challenged by
               this point of pale light. Our planet is a lonely speck in the
@@ -284,13 +286,13 @@ const EarthOverview = () => {
               vastness, there is no hint that help will come from elsewhere to
               save us from ourselves.
             </p>
-            <p className="pb-5 font-Playpen">
+            <p className="pb-5 font-Playpen leading-loose">
               The Earth is the only world known so far to harbor life. There is
               nowhere else, at least in the near future, to which our species
               could migrate. Visit, yes. Settle, not yet. Like it or not, for
               the moment the Earth is where we make our stand.
             </p>
-            <p className="pb-5 font-Playpen">
+            <p className="pb-5 font-Playpen leading-loose">
               It has been said that astronomy is a humbling and
               character-building experience. There is perhaps no better
               demonstration of the folly of human conceits than this distant
@@ -298,7 +300,7 @@ const EarthOverview = () => {
               to deal more kindly with one another, and to preserve and cherish
               the pale blue dot, the only home we've ever known."
             </p>
-            <p className="pb-5 font-bold">— Carl Sagan, Pale Blue Dot, 1994</p>
+            <p className="pb-5 font-Playpen leading-loose">— Carl Sagan, Pale Blue Dot, 1994</p>
           </div>
         </div>
    
