@@ -10,6 +10,8 @@ const HistoryOverview = () => {
       id: "01",
       title: "first artificial Earth satellite:",
       img: Sputnik1,
+      credit: "wikipedia.",
+      creditLink: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fid.wikipedia.org%2Fwiki%2FSputnik_1&psig=AOvVaw1dq3WqIsB8I1mh-mj2P0Cn&ust=1701751988244000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOCW0Kj-9IIDFQAAAAAdAAAAABAE",
       text: `Sputnik 1, the world's first artificial satellite, marked the dawn of
   the space age and revolutionized our understanding of the Earth and
   beyond. Launched by the Soviet Union on October 4, 1957, Sputnik 1 was
@@ -30,6 +32,8 @@ const HistoryOverview = () => {
       id: "02",
       title: "First man in space:",
       img: yuriGagarin,
+      credit: "bobo.grid",
+      creditLink: "https://bobo.grid.id/read/08674014/yuri-gagarin-manusia-pertama-di-ruang-angkasa?page=all",
       text: ` Yuri Gagarin, the first human to journey into space, stands as an
       enduring symbol of human courage, exploration, and achievement. His
       historic flight aboard the Vostok 1 spacecraft on April 12, 1961,
@@ -51,6 +55,8 @@ const HistoryOverview = () => {
       id: "03",
       title: "The Apollo Program:",
       img: buzzAldrinMoonLanding,
+      credit: "NASA",
+      creditLink: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nasa.gov%2Fimage-article%2Fbuzz-aldrin-moon%2F&psig=AOvVaw3V3iuFdL1s5GuDQk1jnpDe&ust=1701755565109000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODlk9KL9YIDFQAAAAAdAAAAABAO",
       text: `The Apollo program stands as an unparalleled chapter in the history of
       space exploration, embodying the spirit of human curiosity and
       determination to conquer the cosmos. Launched by NASA in 1961 with the
@@ -74,6 +80,8 @@ const HistoryOverview = () => {
       id: "04",
       title: "The Space Shuttle Era:",
       img: spaceshuttle,
+      credit: "wikipedia",
+      creditLink: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSpace_Shuttle&psig=AOvVaw0Rd1C0rJCyrbfvp5kFMYZf&ust=1701755691935000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMjY4I6M9YIDFQAAAAAdAAAAABAE",
       text: `The Space Shuttle era, spanning from 1981 to 2011, represented a
       transformative chapter in space exploration, marked by the launch of
       the Space Shuttle fleet and the development of reusable spacecraft.
@@ -125,20 +133,25 @@ const HistoryOverview = () => {
   return (
     <main className="w-[80%] mx-auto mt-20 py-5 max-w-7xl">
       {data.map((topic) => {
-        const { id, title, text, img } = topic;
+        const { id, title, text, img, credit, creditLink } = topic;
         return (
           <div key={id} className="mb-14">
             <h2 className="text-4xl mb-5 text-DarkSlateGray font-bold">
               {title}{" "}
             </h2>
             {img !== null && (
-              <div className="mb-5 max-w-xl">
+              <>
+              <div className="max-w-xl">
                 <img
                   className="w-full h-full object-cover"
                   src={img}
                   alt="Mars size comparison"
-                />
+                  />
               </div>
+              <div className='mb-5'>
+               <a href={creditLink} className="mb-5 text-sm">credit: {credit}</a>
+              </div>
+            </>
             )}
             <p className="leading-loose font-Playpen">{text}</p>
           </div>
