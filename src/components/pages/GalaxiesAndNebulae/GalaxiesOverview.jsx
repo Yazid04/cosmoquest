@@ -27,12 +27,18 @@ const GalaxiesOverview = () => {
           <h2 className="text-5xl mb-5 text-DarkSlateGray font-bold">
             1. Galaxies:
           </h2>
-          <div className="mb-5 text-DarkSlateGray lg:max-w-3xl lg:h-[35rem]">
+          <div className="mb-2 text-DarkSlateGray lg:max-w-3xl lg:h-[35rem]">
             <img
               className="w-full h-full object-cover"
               src={andromeda2}
               alt="Introduction to the Solar System"
             />
+          </div>
+          <div className="mb-4">
+            <p className="my-1">M31 or most commonly known as the Andromeda Galaxy.</p>
+            <a href={'https://unsplash.com/photos/galaxy-with-starry-night-RF4p4rTM-2s'} className="mb-5 text-sm">
+              credit: Unsplash
+            </a>
           </div>
           <p className="leading-relaxed font-Playpen">
             Galaxies, vast cosmic structures comprising stars, gas, dust, and
@@ -58,13 +64,23 @@ const GalaxiesOverview = () => {
           <h2 className="text-4xl mb-5 text-DarkSlateGray font-bold">
             I Spiral galaxies:
           </h2>
-          <div className="mb-5 text-DarkSlateGray lg:max-w-2xl lg:h-[28rem]">
+          <div className="mb-2 text-DarkSlateGray lg:max-w-2xl lg:h-[28rem]">
             <img
               className="w-full h-full object-cover"
               src={NGC1300Galaxy}
               alt="Introduction to the Solar System"
             />
           </div>
+
+          <div className="mb-4">
+            <p className="my-1">barred spiral galaxy NGC 1300.</p>
+            <a
+              href={"https://esahubble.org/images/opo0501a/"}
+              className="mb-5 text-sm">
+              Credit: NASA, ESA, and The Hubble Heritage Team (STScI/AURA)
+            </a>
+          </div>
+
           <p className="leading-relaxed font-Playpen">
             Spiral galaxies enchant us with their mesmerizing, spiral-arm
             structures that gracefully wind around a central nucleus. Within
@@ -81,12 +97,22 @@ const GalaxiesOverview = () => {
           <h2 className="text-4xl mb-5 text-DarkSlateGray font-bold">
             II elliptical galaxies:
           </h2>
-          <div className="mb-5 text-DarkSlateGray lg:max-w-2xl lg:h-[28rem]">
+          <div className="mb-2 text-DarkSlateGray lg:max-w-2xl lg:h-[28rem]">
             <img
               className="w-full h-full object-cover"
               src={NGC4150EllipticalGalaxy}
               alt="Introduction to the Solar System"
             />
+          </div>
+
+          <div className="mb-4">
+            <p className="my-1">Elliptical galaxy NGC 4150.</p>
+            <a
+              href={"https://esahubble.org/images/opo1038b/"}
+              className="mb-5 text-sm"
+            >
+              credit: ESA/Hubble
+            </a>
           </div>
           <p className="leading-relaxed font-Playpen">
             In stark contrast to the spiraling grace of their counterparts,
@@ -104,13 +130,24 @@ const GalaxiesOverview = () => {
           <h2 className="text-4xl mb-5 text-DarkSlateGray font-bold">
             III Irregular galaxies:
           </h2>
-          <div className="mb-5 text-DarkSlateGray lg:max-w-2xl lg:h-[28rem]">
+          <div className="mb-2 text-DarkSlateGray lg:max-w-2xl lg:h-[28rem]">
             <img
               className="w-full h-full object-cover"
               src={HolmbergIIIrregularGalaxy}
               alt="Introduction to the Solar System"
             />
           </div>
+
+          <div className="mb-4">
+            <p className="my-1">irregular galaxy Holmberg II.</p>
+            <a
+              href={"https://esahubble.org/images/heic1114a/"}
+              className="mb-5 text-sm"
+            >
+              credit: NASA & ESA
+            </a>
+          </div>
+
           <p className="leading-relaxed font-Playpen">
             Irregular galaxies defy convention with their unique and
             asymmetrical shapes, breaking free from the structured norms of

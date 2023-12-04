@@ -3,6 +3,7 @@ import HolmbergIIIrregularGalaxy from "./imgs/HolmbergIIIrregularGalaxy.jpeg";
 import NGC4150EllipticalGalaxy from "./imgs/NGC4150EllipticalGalaxy.jpeg";
 import NGC1300Galaxy from "./imgs/NGC1300Galaxy.jpeg";
 import andromedaGalaxy from "./imgs/andromedaGalaxy.jpeg";
+import andromedaGalaxy2 from './imgs/andromedaGalaxy2.jpg'
 
 import orionNubula from './imgs/orionNubula.jpeg'
 import nebulaImg from './imgs/nebulaImg.jpeg'
@@ -29,6 +30,10 @@ const Galaxies = [
   {
     id: 5,
     image: NGC4150EllipticalGalaxy,
+  },
+  {
+    id: 6,
+    image: andromedaGalaxy2,
   },
 ];
 
