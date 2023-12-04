@@ -11,12 +11,18 @@ const NebulaeOverview = () => {
           <h2 className="text-5xl mb-5 text-DarkSlateGray font-bold">
             2. Nebulae:
           </h2>
-          <div className="mb-5 text-DarkSlateGray lg:max-w-3xl lg:h-[35rem]">
+          <div className="mb-2 text-DarkSlateGray lg:max-w-3xl lg:h-[35rem]">
             <img
               className="w-full h-full object-cover"
               src={orionNubula}
               alt="Introduction to the Solar System"
             />
+          </div>
+          <div className="mb-4">
+            <p className="my-1">The Orion Nebula.</p>
+            <a href={'https://esahubble.org/images/heic0601a/'} className="text-sm">
+              credit: ESA/Hubble
+            </a>
           </div>
           <p className="leading-relaxed font-Playpen">
             Nebulae, the ethereal clouds of gas and dust scattered throughout

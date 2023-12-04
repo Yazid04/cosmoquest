@@ -95,7 +95,7 @@ const GalaxiesOverview = () => {
         </div>
         <div className="mb-14">
           <h2 className="text-4xl mb-5 text-DarkSlateGray font-bold">
-            II elliptical galaxies:
+            II Elliptical galaxies:
           </h2>
           <div className="mb-2 text-DarkSlateGray lg:max-w-2xl lg:h-[28rem]">
             <img
