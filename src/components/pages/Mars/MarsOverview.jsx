@@ -29,8 +29,8 @@ const MarsOverview = () => {
   return (
     <main className="w-[80%] mx-auto mt-20 py-5 max-w-7xl" ref={overviewRef}>
       <div className="mb-14">
-        <h2 className="text-4xl mb-5 text-DarkSlateGray">Introduction: </h2>
-        <p className="leading-relaxed">
+        <h2 className="text-4xl mb-5 text-DarkSlateGray font-bold">Introduction: </h2>
+        <p className="leading-loose font-Playpen">
           Mars, the fourth planet from the Sun, has captivated the human
           imagination for centuries. Known as the "Red Planet" due to its
           distinctive reddish hue, Mars stands as a testament to the beauty and
@@ -62,10 +62,10 @@ const MarsOverview = () => {
         />
       </div>
       <div className="mb-14">
-        <h2 className="text-4xl mb-5 text-DarkSlateGray">
+        <h2 className="text-4xl mb-5 text-DarkSlateGray font-bold">
           Mars Exploration History:
         </h2>
-        <p className="leading-relaxed">
+        <p className="leading-loose font-Playpen">
           The exploration of Mars has been a testament to human ingenuity and
           the relentless pursuit of knowledge. Early observations from Earth
           hinted at the presence of{" "}
@@ -95,10 +95,10 @@ const MarsOverview = () => {
         </p>
       </div>
       <div className="mb-14">
-        <h2 className="text-4xl mb-5 text-DarkSlateGray">
+        <h2 className="text-4xl mb-5 text-DarkSlateGray font-bold">
           Mars' Atmosphere and Climate:{" "}
         </h2>
-        <p className="leading-relaxed">
+        <p className="leading-loose font-Playpen">
           Mars, once possessing a thicker atmosphere, has an atmosphere that is
           now thin and composed mostly of carbon dioxide. With an average
           surface pressure less than 1% of Earth's, the Martian atmosphere
@@ -136,10 +136,10 @@ const MarsOverview = () => {
         ></iframe>
       </div>
       <div className="mb-14">
-        <h2 className="text-4xl mb-5 text-DarkSlateGray">
+        <h2 className="text-4xl mb-5 text-DarkSlateGray font-bold">
           Rovers and Landers:
         </h2>
-        <p className="leading-relaxed">
+        <p className="leading-loose font-Playpen">
           The exploration of Mars has been greatly advanced by a series of
           rovers and landers, each contributing to our understanding of the
           Martian landscape. Landers, such as Viking 1 and Viking 2, provided
