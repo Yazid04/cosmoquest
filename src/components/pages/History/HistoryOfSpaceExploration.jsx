@@ -4,6 +4,7 @@ import { useGlobalContext } from "../../context";
 import Hero from "./Hero";
 import { Footer } from "../../shared/Footer";
 import HistoryOverview from "./HistoryOverview";
+import sputnik1Launch from './images/sputnik1Launch.jpeg'
 
 const HistoryOfSpaceExploration = () => {
   // Another great background image option
@@ -11,7 +12,7 @@ const HistoryOfSpaceExploration = () => {
   
   const { handleMouseChange } = useGlobalContext();
   const backgroundStyles = {
-    backgroundImage: `url(https://planetary.s3.amazonaws.com/web/assets/pictures/liftoff-vostok-1.jpg)`,
+    backgroundImage: `url(${sputnik1Launch})`,
     backgroundSize: "cover",
     backgroundPosition: "top",
     backgroundRepeat: "no-repeat",
