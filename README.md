@@ -54,4 +54,4 @@ CosmoQuest is a virtual space museum platform that allow users to explore severa
   5. Open your web browser and go to http://localhost:3000 to see the app running locally.
 
   ***That's it! You have successfully installed and set up CosmoQuest locally.***  
-  ***Made with ❤ by [@Yazid04](https://github.com/Yazid04/cosmoquest.git)***
+  ***Made with 💛 by [@Yazid04](https://github.com/Yazid04/cosmoquest.git)***
