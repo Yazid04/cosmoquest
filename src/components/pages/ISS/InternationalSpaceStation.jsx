@@ -2,18 +2,17 @@ import React from "react";
 import Navbar from "../../shared/Navbar";
 import { useGlobalContext } from "../../context";
 import Hero from "./Hero";
-//import SSOverview from "./SSOverview";
 import { Footer } from "../../shared/Footer";
 import ISSOverview from "./ISSOverview";
+import EarthFromSpaceBg from './images/EarthFromSpaceBg.jpeg'
 
 const InternationalSpaceStation = () => {
   const { handleMouseChange } = useGlobalContext();
   const backgroundStyles = {
-    backgroundImage: `url(${'https://www.nasa.gov/wp-content/uploads/2023/03/bwhi1apicaaamlo.jpg_large.jpg'})`,
+    backgroundImage: `url(${EarthFromSpaceBg})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    backgroundColor: "orange !important"
   };
 
   return (
