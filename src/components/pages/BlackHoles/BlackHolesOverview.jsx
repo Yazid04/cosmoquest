@@ -1,11 +1,14 @@
 import React from "react";
 import blackHole from "./imgs/blackHole.jpeg";
+import { useGlobalContext } from "../../context";
 
 const BlackHolesOverview = () => {
 
+  const {handleMouseChange} = useGlobalContext();
+
   return (
-    <main className={`w-[85%] mx-auto h-min mt-14`}>
-      <div className="mb-10">
+    <main className={`closeSubMenu w-[85%] mx-auto h-min pt-14`} onMouseOver={handleMouseChange}>
+      <div className="mb-10" onMouseOver={handleMouseChange}>
         <h1 className="text-5xl text-Silver font-bold my-5">Black Holes</h1>
         <div className="mb-5 text-DarkSlateGray lg:max-w-3xl lg:h-[30rem]">
           <img
@@ -52,7 +55,7 @@ const BlackHolesOverview = () => {
         </p>
       </div>
 
-      <div className="mb-10">
+      <div className="closeSubMenu mb-10" onMouseOver={handleMouseChange}>
         <h1 className="text-5xl text-Silver font-bold my-5">
           History of black holes
         </h1>
@@ -75,7 +78,7 @@ const BlackHolesOverview = () => {
         </p>
       </div>
 
-      <div className="py-5">
+      <div className="closeSubMenu py-5">
         <h1 className="text-5xl text-Silver font-bold my-5">
           The Size of Black Holes
         </h1>
