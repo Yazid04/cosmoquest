@@ -8,7 +8,7 @@ const HistoryOverview = () => {
   const data = [
     {
       id: "01",
-      title: "first artificial Earth satellite:",
+      title: "First artificial Earth satellite:",
       img: Sputnik1,
       credit: "wikipedia.",
       creditLink: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fid.wikipedia.org%2Fwiki%2FSputnik_1&psig=AOvVaw1dq3WqIsB8I1mh-mj2P0Cn&ust=1701751988244000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOCW0Kj-9IIDFQAAAAAdAAAAABAE",
