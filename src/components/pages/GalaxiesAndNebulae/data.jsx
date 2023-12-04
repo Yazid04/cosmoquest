@@ -8,7 +8,8 @@ import andromedaGalaxy2 from './imgs/andromedaGalaxy2.jpg'
 import orionNubula from './imgs/orionNubula.jpeg'
 import nebulaImg from './imgs/nebulaImg.jpeg'
 import southernRingNebula from './imgs/southernRingNebula.png'
-
+import HorseheadNebula from './imgs/HorseheadNebula.jpeg'
+import nebulaNGC6302 from './imgs/nebulaNGC6302.jpeg'
 
 const Galaxies = [
   {
@@ -49,6 +50,14 @@ const Nebulae = [
  {
   id: 8,
   image: orionNubula,
+ },
+ {
+  id: 8,
+  image: nebulaNGC6302,
+ },
+ {
+  id: 8,
+  image: HorseheadNebula,
  },
 ]
 
