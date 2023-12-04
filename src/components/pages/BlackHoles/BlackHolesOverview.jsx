@@ -3,20 +3,29 @@ import blackHole from "./imgs/blackHole.jpeg";
 import { useGlobalContext } from "../../context";
 
 const BlackHolesOverview = () => {
-
-  const {handleMouseChange} = useGlobalContext();
+  const { handleMouseChange } = useGlobalContext();
 
   return (
-    <main className={`closeSubMenu w-[85%] mx-auto h-min pt-14`} onMouseOver={handleMouseChange}>
+    <main
+      className={`closeSubMenu w-[85%] mx-auto h-min pt-14`}
+      onMouseOver={handleMouseChange}
+    >
       <div className="mb-10" onMouseOver={handleMouseChange}>
         <h1 className="text-5xl text-Silver font-bold my-5">Black Holes</h1>
-        <div className="mb-5 text-DarkSlateGray lg:max-w-3xl lg:h-[30rem]">
+        <div className="mb-2 text-DarkSlateGray lg:max-w-3xl lg:h-[30rem]">
           <img
             className="w-full h-full object-cover"
             src={blackHole}
             alt="A black hole Illustration"
           />
         </div>
+
+        <div className="mb-5 text-Silver">
+          <a href={'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wired.com%2F2020%2F11%2Fgeeks-guide-black-holes%2F&psig=AOvVaw1ChzoKMehM7BPH0Nxu9uuO&ust=1701765561864000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIDS8fCw9YIDFQAAAAAdAAAAABAE'} className="mb-5 text-sm">
+            credit: WIRED
+          </a>
+        </div>
+
         <p className="leading-relaxed font-Playpen text-Silver mb-5">
           A black hole forms from the remnants of a large star that undergoes a
           supernova explosion. They exist in the center of each galaxy. Stars,
@@ -93,16 +102,16 @@ const BlackHolesOverview = () => {
           that of the sun. On the other hand, TON 618 is a captivating example
           of an ultramassive black hole that stretches the limits of our cosmic
           imagination. Nestled in the center of a distant quasar, TON 618 boasts
-          a mind-boggling and staggering mass estimated to be around 66 billion times 
-          that of our sun. This cosmic behemoth defies the conventions of ordinary black
-          holes, challenging our understanding of the extremes that nature can
-          achieve. To put this in perspective, TON 618's gravitational influence
-          is so profound that it could devour entire star systems with casual
-          cosmic nonchalance. Imagine a celestial giant, lurking in the depths
-          of the cosmos, its appetite for matter and energy unmatched in the
-          cosmic buffet of the universe. TON 618 stands as a testament to the
-          awe-inspiring scale and diversity within the enigmatic family of black
-          holes.
+          a mind-boggling and staggering mass estimated to be around 66 billion
+          times that of our sun. This cosmic behemoth defies the conventions of
+          ordinary black holes, challenging our understanding of the extremes
+          that nature can achieve. To put this in perspective, TON 618's
+          gravitational influence is so profound that it could devour entire
+          star systems with casual cosmic nonchalance. Imagine a celestial
+          giant, lurking in the depths of the cosmos, its appetite for matter
+          and energy unmatched in the cosmic buffet of the universe. TON 618
+          stands as a testament to the awe-inspiring scale and diversity within
+          the enigmatic family of black holes.
         </p>
       </div>
     </main>
