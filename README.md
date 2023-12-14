@@ -15,6 +15,10 @@ CosmoQuest is a virtual space museum platform that allow users to explore severa
   ####  Utility Functions: Multiple utility functions such as "Slider" have been implemented to optimize the code and improve performance.  
    
    
+  
+   ![CosmoQuest images](file:///C:/Users/YAZID/Pictures/Screenshots/cosmoquest1.png)
+   
+   
    
   ## Technologies Used :
   * React js
