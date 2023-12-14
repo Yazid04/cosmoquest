@@ -16,7 +16,9 @@ CosmoQuest is a virtual space museum platform that allow users to explore severa
    
   
   
-  ![CosmoQuest images](./src/components/static/cosmicCliffs.png)
+  ![CosmoQuest images](./src/components/static/screenShot1.png)
+  ![CosmoQuest images](./src/components/static/screenShot2.png)
+  ![CosmoQuest images](./src/components/static/screenShot3.png)
    
   
   
