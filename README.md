@@ -19,6 +19,12 @@ CosmoQuest is a virtual space museum platform that allow users to explore severa
   ![CosmoQuest images]('./src/components/static/cosmicCliffs.png)
    
   
+<<<<<<< HEAD
+=======
+   ![CosmoQuest images](file:///C:/Users/YAZID/Pictures/Screenshots/cosmoquest1.png)
+   
+   
+>>>>>>> 9799ffb0fc2c893341d16af002e00632af10753f
    
   ## Technologies Used :
   * React js
