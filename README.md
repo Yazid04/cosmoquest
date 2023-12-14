@@ -14,7 +14,11 @@ CosmoQuest is a virtual space museum platform that allow users to explore severa
   ####  Context API: Multiple contexts are used throughout the project instead of a single global context, to efficiently manage states.  
   ####  Utility Functions: Multiple utility functions such as "Slider" have been implemented to optimize the code and improve performance.  
    
+  
+  
+  ![CosmoQuest images]('./src/components/static/cosmicCliffs.png)
    
+  
    
   ## Technologies Used :
   * React js
