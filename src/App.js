@@ -17,7 +17,6 @@ import InternationalSpaceStation from './components/pages/ISS/InternationalSpace
 
 function App() {
   const location = useLocation();
-  const homeURL = "https://yazid04.github.io/cosmoquest/"
 
   useEffect(() => {
     // Check if the current route is "/CelestialWonders/BlackHoles"
@@ -31,7 +30,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route exact path="https://yazid04.github.io/cosmoquest/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
 
         <Route
           path="/CosmicExplorations/WondrousWorlds"
