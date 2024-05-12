@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cosmoquest/static/css/main.706b066a.css",
-    "main.js": "/cosmoquest/static/js/main.6e94aabb.js",
+    "main.js": "/cosmoquest/static/js/main.75752e17.js",
     "static/media/southernRingNebula.png": "/cosmoquest/static/media/southernRingNebula.f2e039f58a9bc7a4f08e.png",
     "static/media/HolmbergIIIrregularGalaxy.jpeg": "/cosmoquest/static/media/HolmbergIIIrregularGalaxy.278aec7dc546391ce028.jpeg",
     "static/media/blueMarble.jpg": "/cosmoquest/static/media/blueMarble.429c2e7aff8bd14befd7.jpg",
@@ -62,10 +62,10 @@
     "static/media/InnerPlanets.jpeg": "/cosmoquest/static/media/InnerPlanets.2aa90e91ed31f2c44df7.jpeg",
     "index.html": "/cosmoquest/index.html",
     "main.706b066a.css.map": "/cosmoquest/static/css/main.706b066a.css.map",
-    "main.6e94aabb.js.map": "/cosmoquest/static/js/main.6e94aabb.js.map"
+    "main.75752e17.js.map": "/cosmoquest/static/js/main.75752e17.js.map"
   },
   "entrypoints": [
     "static/css/main.706b066a.css",
-    "static/js/main.6e94aabb.js"
+    "static/js/main.75752e17.js"
   ]
 }
