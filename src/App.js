@@ -30,7 +30,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route exact path="/cosmoquest" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
 
         <Route
           path="/CosmicExplorations/WondrousWorlds"
