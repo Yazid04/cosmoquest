@@ -8,7 +8,7 @@ import { PagesProvider } from "./components/pages/pagesContext";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/cosmoquest">
       <AppProvider>
         <PagesProvider>
           <App />
